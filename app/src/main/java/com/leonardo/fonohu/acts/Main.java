@@ -1,6 +1,9 @@
-package com.leonardo.fonohu;
+package com.leonardo.fonohu.acts;
 
 import android.app.Activity;
+
+import com.leonardo.fonohu.R;
+import com.leonardo.fonohu.frags.MenuPrincipal_;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
@@ -9,7 +12,7 @@ import org.androidannotations.annotations.EActivity;
 public class Main extends Activity {
 
     @AfterViews
-    void AoCriar() {
-        getActionBar().hide();
+    void aoCriar() {
+        getFragmentManager().beginTransaction().add(R.id.mainLayout, new MenuPrincipal_()).commit();
     }
 }
