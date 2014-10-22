@@ -1,9 +1,6 @@
-package com.leonardo.fonohu.acts;
+package com.leonardo.fonohu;
 
 import android.app.Activity;
-
-import com.leonardo.fonohu.R;
-import com.leonardo.fonohu.frags.MenuPrincipal_;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;

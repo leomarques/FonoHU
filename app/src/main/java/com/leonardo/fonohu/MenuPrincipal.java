@@ -1,8 +1,6 @@
-package com.leonardo.fonohu.frags;
+package com.leonardo.fonohu;
 
 import android.app.Fragment;
-
-import com.leonardo.fonohu.R;
 
 import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EFragment;
@@ -12,7 +10,7 @@ public class MenuPrincipal extends Fragment {
 
     @Click
     void btnAnimais() {
-        getFragmentManager().beginTransaction().replace(getId(), new comecaAnimais_()).addToBackStack(null).commit();
+        getFragmentManager().beginTransaction().replace(getId(), new ComecaAnimais_()).addToBackStack(null).commit();
     }
 
 }

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="left|top"
     android:id="@+id/menuPrincipalLayout"
-    tools:context="com.leonardo.fonohu.frags.MenuPrincipal">
+    tools:context="com.leonardo.fonohu.MenuPrincipal">
 
     <ImageView
         android:layout_width="wrap_content"
