@@ -11,6 +11,7 @@ import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 @EFragment(R.layout.fragment_jogo_animais)
 public class JogoAnimais extends Fragment {
@@ -29,12 +30,13 @@ public class JogoAnimais extends Fragment {
         ld.add(R.drawable.cat);
         ld.add(R.drawable.bird);
 
-        a = (int) (Math.random() * 10) % 3;
+        Random r = new Random();
+        a = r.nextInt(3);
         animal1.setImageResource(ld.get(a));
         animal1.setTag(ld.get(a));
         ld.remove(a);
 
-        a = (int) (Math.random() * 10) % 2;
+        a = r.nextInt(2);
         animal2.setImageResource(ld.get(a));
         animal2.setTag(ld.get(a));
         ld.remove(a);
@@ -42,7 +44,7 @@ public class JogoAnimais extends Fragment {
         animal3.setImageResource(ld.get(0));
         animal3.setTag(ld.get(0));
 
-        a = (int) (Math.random() * 10) % 3;
+        a = r.nextInt(3);
 
         int som = 0;
         switch (a) {
@@ -106,6 +108,9 @@ public class JogoAnimais extends Fragment {
     public void onPause() {
         super.onPause();
 
+        mpa.stop();
+        mpw.stop();
+        mpl.stop();
         mpa.release();
         mpw.release();
         mpl.release();
