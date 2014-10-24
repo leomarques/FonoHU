@@ -10,7 +10,7 @@ public class ComecaAnimais extends Fragment {
 
     @Click
     public void btnJogarAnimais() {
-        getFragmentManager().beginTransaction().replace(getId(), new JogoAnimais_()).addToBackStack(null).commit();
+        getFragmentManager().beginTransaction().replace(getId(), new ApresentaAnimais_()).addToBackStack(null).commit();
     }
 
 }

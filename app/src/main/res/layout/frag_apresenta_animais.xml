@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.leonardo.fonohu.ComecaAnimais">
+    tools:context="com.leonardo.fonohu.ApresentaAnimais">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -20,7 +20,7 @@
         android:id="@+id/dog"
         android:layout_gravity="center"
         android:src="@drawable/dog"
-        android:layout_above="@+id/cat"
+        android:layout_below="@+id/texto"
         android:layout_centerHorizontal="true" />
 
     <ImageView
@@ -29,7 +29,7 @@
         android:id="@+id/cat"
         android:layout_gravity="left|bottom"
         android:src="@drawable/cat"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/dog"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -42,5 +42,13 @@
         android:layout_alignTop="@+id/cat"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jogar!"
+        android:id="@+id/btn"
+        android:layout_below="@+id/cat"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

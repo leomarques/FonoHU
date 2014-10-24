@@ -4,7 +4,9 @@
     <string name="app_name">FonoHU</string>
     <string name="action_settings">Settings</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="acertou">Acertou!</string>
+    <string name="acertou">Acertou! E esse?</string>
     <string name="errou">Errou!</string>
+    <string name="qualanimal">Que animal é esse?</string>
+    <string name="parabens">Parabéns!</string>
 
 </resources>
