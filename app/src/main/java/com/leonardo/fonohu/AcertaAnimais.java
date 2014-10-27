@@ -63,6 +63,10 @@ public class AcertaAnimais extends Fragment {
                 Toast.makeText(getActivity(), R.string.parabens, Toast.LENGTH_SHORT).show();
                 tocar(R.raw.win);
 
+                dog.setVisibility(View.INVISIBLE);
+                cat.setVisibility(View.INVISIBLE);
+                bird.setVisibility(View.INVISIBLE);
+
                 btnSeguir.setVisibility(View.VISIBLE);
             } else {
                 Toast.makeText(getActivity(), R.string.acertou, Toast.LENGTH_SHORT).show();
