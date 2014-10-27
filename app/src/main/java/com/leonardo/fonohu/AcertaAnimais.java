@@ -2,6 +2,7 @@ package com.leonardo.fonohu;
 
 import android.app.Fragment;
 import android.media.MediaPlayer;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -15,6 +16,9 @@ public class AcertaAnimais extends Fragment {
 
     @ViewById
     ImageView dog, cat, bird;
+
+    @ViewById
+    ImageView btnSeguir;
 
     MediaPlayer mp;
 
@@ -48,15 +52,22 @@ public class AcertaAnimais extends Fragment {
         clicado(2);
     }
 
+    @Click
+    public void btnSeguir() {
+        getFragmentManager().beginTransaction().replace(getId(), new MenuPrincipal_()).commit();
+    }
+
     public void clicado(int animal) {
         if (animal == somAtual) {
             if (somAtual == 2) {
                 Toast.makeText(getActivity(), R.string.parabens, Toast.LENGTH_SHORT).show();
-                getFragmentManager().popBackStack();
-                return;
+                tocar(R.raw.win);
+
+                btnSeguir.setVisibility(View.VISIBLE);
+            } else {
+                Toast.makeText(getActivity(), R.string.acertou, Toast.LENGTH_SHORT).show();
+                tocar(sons[++somAtual]);
             }
-            Toast.makeText(getActivity(), R.string.acertou, Toast.LENGTH_SHORT).show();
-            tocar(sons[++somAtual]);
         } else {
             Toast.makeText(getActivity(), R.string.errou, Toast.LENGTH_SHORT).show();
             tocar(sons[somAtual]);

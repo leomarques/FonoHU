@@ -2,7 +2,6 @@ package com.leonardo.fonohu;
 
 import android.app.Fragment;
 import android.media.MediaPlayer;
-import android.widget.Button;
 import android.widget.ImageView;
 
 import org.androidannotations.annotations.Click;
@@ -14,9 +13,6 @@ public class ApresentaAnimais extends Fragment {
 
     @ViewById
     ImageView dog, cat, bird, texto;
-
-    @ViewById
-    Button btn;
 
     MediaPlayer mp;
 
@@ -47,8 +43,13 @@ public class ApresentaAnimais extends Fragment {
     }
 
     @Click
-    public void btn() {
-        getFragmentManager().beginTransaction().replace(getId(), new AcertaAnimais_()).addToBackStack(null).commit();
+    public void btnOk() {
+        getFragmentManager().beginTransaction().replace(getId(), new AcertaAnimais_()).commit();
+    }
+
+    @Click
+    public void btnNo() {
+        getFragmentManager().beginTransaction().replace(getId(), new MenuPrincipal_()).commit();
     }
 
     @Override

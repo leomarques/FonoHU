@@ -8,32 +8,37 @@
     tools:context="com.leonardo.fonohu.MenuPrincipal">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
         android:id="@+id/btnAnimais"
         android:src="@drawable/btn_animais"/>
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
         android:id="@+id/btnTransporte"
         android:src="@drawable/btn_transporte"/>
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
         android:id="@+id/btnParteCorpo"
         android:src="@drawable/btn_partes_corpo"/>
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
         android:id="@+id/btnAcoes"
         android:src="@drawable/btn_acoes"/>
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
         android:id="@+id/btnCores"
         android:src="@drawable/btn_cores"/>
 </LinearLayout>

@@ -10,7 +10,7 @@ public class MenuPrincipal extends Fragment {
 
     @Click
     void btnAnimais() {
-        getFragmentManager().beginTransaction().replace(getId(), new ComecaAnimais_()).addToBackStack(null).commit();
+        getFragmentManager().beginTransaction().replace(getId(), new ComecaAnimais_()).commit();
     }
 
 }

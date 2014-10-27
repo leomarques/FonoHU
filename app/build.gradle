@@ -37,7 +37,7 @@ apt {
 }
 
 dependencies {
-    apt "org.androidannotations:androidannotations:3.1"          // add these
-    compile "org.androidannotations:androidannotations-api:3.1"  // two lines
+    apt "org.androidannotations:androidannotations:3.1"
+    compile "org.androidannotations:androidannotations-api:3.1"
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }

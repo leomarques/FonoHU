@@ -9,8 +9,13 @@ import org.androidannotations.annotations.EFragment;
 public class ComecaAnimais extends Fragment {
 
     @Click
-    public void btnJogarAnimais() {
-        getFragmentManager().beginTransaction().replace(getId(), new ApresentaAnimais_()).addToBackStack(null).commit();
+    public void btnOk() {
+        getFragmentManager().beginTransaction().replace(getId(), new ApresentaAnimais_()).commit();
+    }
+
+    @Click
+    public void btnNo() {
+        getFragmentManager().beginTransaction().replace(getId(), new MenuPrincipal_()).commit();
     }
 
 }
