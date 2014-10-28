@@ -44,7 +44,7 @@ public class ApresentaAnimais extends Fragment {
 
     @Click
     public void btnOk() {
-        getFragmentManager().beginTransaction().replace(getId(), new AcertaAnimais_()).commit();
+        getFragmentManager().beginTransaction().replace(getId(), new AcertaAnimais1_()).commit();
     }
 
     @Click

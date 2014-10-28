@@ -11,8 +11,8 @@ import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
 
-@EFragment(R.layout.frag_acerta_animais)
-public class AcertaAnimais extends Fragment {
+@EFragment(R.layout.frag_acerta_animais1)
+public class AcertaAnimais2 extends Fragment {
 
     @ViewById
     ImageView dog, cat, bird;
