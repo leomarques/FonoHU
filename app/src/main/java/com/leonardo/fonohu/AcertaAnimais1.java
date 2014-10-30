@@ -70,23 +70,38 @@ public class AcertaAnimais1 extends Fragment {
                 btnSeguir.setVisibility(View.VISIBLE);
             } else {
                 Toast.makeText(getActivity(), R.string.acertou, Toast.LENGTH_SHORT).show();
-                tocar(sons[++somAtual]);
+                tocar(R.raw.win, sons[++somAtual]);
             }
         } else {
             Toast.makeText(getActivity(), R.string.errou, Toast.LENGTH_SHORT).show();
-            tocar(sons[somAtual]);
+            tocar(R.raw.lose, sons[somAtual]);
         }
     }
 
-    private void tocar(int som) {
+    private void tocar(final int som1, final int som2) {
         if (mp != null) {
             mp.stop();
             mp.release();
-            mp = null;
         }
 
-        mp = MediaPlayer.create(getActivity(), som);
+        mp = MediaPlayer.create(getActivity(), som1);
+
+        if (som2 != -1) {
+            mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                @Override
+                public void onCompletion(MediaPlayer mediaPlayer) {
+                    mp.release();
+                    mp = MediaPlayer.create(getActivity(), som2);
+                    mp.start();
+                }
+            });
+        }
+
         mp.start();
+    }
+
+    private void tocar(final int som) {
+        tocar(som, -1);
     }
 
     @Override
