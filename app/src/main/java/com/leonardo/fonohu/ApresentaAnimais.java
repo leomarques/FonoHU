@@ -1,7 +1,6 @@
 package com.leonardo.fonohu;
 
 import android.app.Fragment;
-import android.media.MediaPlayer;
 import android.widget.ImageView;
 
 import org.androidannotations.annotations.Click;
@@ -12,35 +11,23 @@ import org.androidannotations.annotations.ViewById;
 public class ApresentaAnimais extends Fragment {
 
     @ViewById
-    ImageView dog, cat, bird, texto;
-
-    MediaPlayer mp;
+    ImageView cachorro, gato, passaro, texto;
 
     @Click
-    public void dog() {
-        tocar(R.raw.dog);
+    public void cachorro() {
+        App.inst().tocar(R.raw.dog);
     }
 
     @Click
-    public void cat() {
-        tocar(R.raw.cat);
+    public void gato() {
+        App.inst().tocar(R.raw.cat);
     }
 
     @Click
-    public void bird() {
-        tocar(R.raw.bird);
+    public void passaro() {
+        App.inst().tocar(R.raw.bird);
     }
 
-    private void tocar(int som) {
-        if (mp != null) {
-            mp.stop();
-            mp.release();
-            mp = null;
-        }
-
-        mp = MediaPlayer.create(getActivity(), som);
-        mp.start();
-    }
 
     @Click
     public void btnOk() {
@@ -50,15 +37,5 @@ public class ApresentaAnimais extends Fragment {
     @Click
     public void btnNo() {
         getFragmentManager().beginTransaction().replace(getId(), new MenuPrincipal_()).commit();
-    }
-
-    @Override
-    public void onDestroyView() {
-        super.onPause();
-        if (mp != null) {
-            mp.stop();
-            mp.release();
-            mp = null;
-        }
     }
 }

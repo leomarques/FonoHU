@@ -1,7 +1,7 @@
 package com.leonardo.fonohu;
 
 import android.app.Fragment;
-import android.media.MediaPlayer;
+import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -14,42 +14,92 @@ import org.androidannotations.annotations.ViewById;
 @EFragment(R.layout.frag_acerta_animais1)
 public class AcertaAnimais1 extends Fragment {
 
+    public static final int TEMPO_CONTORNO = 2000;
+    public static final int QOBJETOS = 3;
+
     @ViewById
-    ImageView dog, cat, bird;
+    ImageView cachorro, gato, passaro;
 
     @ViewById
     ImageView btnSeguir;
 
-    MediaPlayer mp;
-
-    int[] sons;
+    int[] sons, imagens;
+    ImageView[] imgViews;
     int somAtual;
+    private Handler h;
 
     @AfterViews
     public void aoCriar() {
-        sons = new int[3];
+        sons = new int[QOBJETOS];
         sons[0] = R.raw.dog;
         sons[1] = R.raw.cat;
         sons[2] = R.raw.bird;
 
+        imgViews = new ImageView[QOBJETOS];
+        imgViews[0] = cachorro;
+        imgViews[1] = gato;
+        imgViews[2] = passaro;
+
+        imagens = new int[QOBJETOS * 3];
+        imagens[0] = R.drawable.cachorro;
+        imagens[1] = R.drawable.gato;
+        imagens[2] = R.drawable.passaro;
+        imagens[3] = R.drawable.cachorro_acerto;
+        imagens[4] = R.drawable.gato_acerto;
+        imagens[5] = R.drawable.passaro_acerto;
+        imagens[6] = R.drawable.cachorro_erro;
+        imagens[7] = R.drawable.gato_erro;
+        imagens[8] = R.drawable.passaro_erro;
+
+        h = new Handler();
         somAtual = 0;
-        tocar(sons[somAtual]);
+        App.inst().tocar(sons[somAtual]);
         Toast.makeText(getActivity(), R.string.qualanimal, Toast.LENGTH_SHORT).show();
     }
 
     @Click
-    public void dog() {
+    public void cachorro() {
         clicado(0);
     }
 
     @Click
-    public void cat() {
+    public void gato() {
         clicado(1);
     }
 
     @Click
-    public void bird() {
+    public void passaro() {
         clicado(2);
+    }
+
+    public void clicado(final int objeto) {
+        h.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                imgViews[objeto].setImageResource(imagens[objeto]);
+            }
+        }, TEMPO_CONTORNO);
+
+        if (objeto == somAtual) {
+            imgViews[objeto].setImageResource(imagens[objeto + QOBJETOS]);
+
+            if (somAtual == QOBJETOS - 1) {
+                Toast.makeText(getActivity(), R.string.parabens, Toast.LENGTH_SHORT).show();
+                App.inst().tocar(R.raw.win);
+
+                for (int i = 0; i < QOBJETOS; i++)
+                    imgViews[i].setVisibility(View.INVISIBLE);
+
+                btnSeguir.setVisibility(View.VISIBLE);
+            } else {
+                Toast.makeText(getActivity(), R.string.acertou, Toast.LENGTH_SHORT).show();
+                App.inst().tocar(R.raw.win, sons[++somAtual]);
+            }
+        } else {
+            imgViews[objeto].setImageResource(imagens[objeto + QOBJETOS * 2]);
+            Toast.makeText(getActivity(), R.string.errou, Toast.LENGTH_SHORT).show();
+            App.inst().tocar(R.raw.lose, sons[somAtual]);
+        }
     }
 
     @Click
@@ -57,60 +107,9 @@ public class AcertaAnimais1 extends Fragment {
         getFragmentManager().beginTransaction().replace(getId(), new MenuPrincipal_()).commit();
     }
 
-    public void clicado(int animal) {
-        if (animal == somAtual) {
-            if (somAtual == 2) {
-                Toast.makeText(getActivity(), R.string.parabens, Toast.LENGTH_SHORT).show();
-                tocar(R.raw.win);
-
-                dog.setVisibility(View.INVISIBLE);
-                cat.setVisibility(View.INVISIBLE);
-                bird.setVisibility(View.INVISIBLE);
-
-                btnSeguir.setVisibility(View.VISIBLE);
-            } else {
-                Toast.makeText(getActivity(), R.string.acertou, Toast.LENGTH_SHORT).show();
-                tocar(R.raw.win, sons[++somAtual]);
-            }
-        } else {
-            Toast.makeText(getActivity(), R.string.errou, Toast.LENGTH_SHORT).show();
-            tocar(R.raw.lose, sons[somAtual]);
-        }
-    }
-
-    private void tocar(final int som1, final int som2) {
-        if (mp != null) {
-            mp.stop();
-            mp.release();
-        }
-
-        mp = MediaPlayer.create(getActivity(), som1);
-
-        if (som2 != -1) {
-            mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                @Override
-                public void onCompletion(MediaPlayer mediaPlayer) {
-                    mp.release();
-                    mp = MediaPlayer.create(getActivity(), som2);
-                    mp.start();
-                }
-            });
-        }
-
-        mp.start();
-    }
-
-    private void tocar(final int som) {
-        tocar(som, -1);
-    }
-
     @Override
-    public void onDestroyView() {
+    public void onPause() {
         super.onPause();
-        if (mp != null) {
-            mp.stop();
-            mp.release();
-            mp = null;
-        }
+        h.removeCallbacksAndMessages(null);
     }
 }

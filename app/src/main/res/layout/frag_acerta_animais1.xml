@@ -8,28 +8,29 @@
     <ImageView
         android:layout_width="170dp"
         android:layout_height="170dp"
-        android:id="@+id/dog"
-        android:src="@drawable/dog"
-        android:layout_below="@+id/bird"
+        android:id="@+id/cachorro"
+        android:src="@drawable/cachorro"
+        android:layout_below="@+id/passaro"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
+        android:onClick="setContentView"
         android:layout_marginTop="55dp" />
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:id="@+id/cat"
-        android:src="@drawable/cat"
-        android:layout_toStartOf="@+id/bird"
-        android:layout_alignBottom="@+id/dog"
+        android:id="@+id/gato"
+        android:src="@drawable/gato"
+        android:layout_toStartOf="@+id/passaro"
+        android:layout_alignBottom="@+id/cachorro"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <ImageView
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:id="@+id/bird"
-        android:src="@drawable/bird"
+        android:id="@+id/passaro"
+        android:src="@drawable/passaro"
         android:layout_marginTop="124dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />

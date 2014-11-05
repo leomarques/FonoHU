@@ -18,29 +18,29 @@
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:id="@+id/dog"
+        android:id="@+id/cachorro"
         android:layout_gravity="center"
-        android:src="@drawable/dog"
+        android:src="@drawable/cachorro"
         android:layout_below="@+id/texto"
         android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:id="@+id/cat"
+        android:id="@+id/gato"
         android:layout_gravity="left|bottom"
-        android:src="@drawable/cat"
-        android:layout_below="@+id/dog"
+        android:src="@drawable/gato"
+        android:layout_below="@+id/cachorro"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:id="@+id/bird"
+        android:id="@+id/passaro"
         android:layout_gravity="right|bottom"
-        android:src="@drawable/bird"
-        android:layout_alignTop="@+id/cat"
+        android:src="@drawable/passaro"
+        android:layout_alignTop="@+id/gato"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -51,8 +51,8 @@
         android:src="@drawable/ok"
         android:paddingBottom="10dp"
         android:layout_alignTop="@+id/btnNo"
-        android:layout_alignLeft="@+id/dog"
-        android:layout_alignStart="@+id/dog" />
+        android:layout_alignLeft="@+id/cachorro"
+        android:layout_alignStart="@+id/cachorro" />
 
     <ImageView
         android:layout_width="70dp"
@@ -61,7 +61,7 @@
         android:id="@+id/btnNo"
         android:src="@drawable/no"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/dog"
-        android:layout_alignEnd="@+id/dog" />
+        android:layout_alignRight="@+id/cachorro"
+        android:layout_alignEnd="@+id/cachorro" />
 
 </RelativeLayout>

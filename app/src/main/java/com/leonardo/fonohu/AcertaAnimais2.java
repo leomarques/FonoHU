@@ -15,7 +15,7 @@ import org.androidannotations.annotations.ViewById;
 public class AcertaAnimais2 extends Fragment {
 
     @ViewById
-    ImageView dog, cat, bird;
+    ImageView cachorro, gato, passaro;
 
     @ViewById
     ImageView btnSeguir;
@@ -38,17 +38,17 @@ public class AcertaAnimais2 extends Fragment {
     }
 
     @Click
-    public void dog() {
+    public void cachorro() {
         clicado(0);
     }
 
     @Click
-    public void cat() {
+    public void gato() {
         clicado(1);
     }
 
     @Click
-    public void bird() {
+    public void passaro() {
         clicado(2);
     }
 
@@ -63,9 +63,9 @@ public class AcertaAnimais2 extends Fragment {
                 Toast.makeText(getActivity(), R.string.parabens, Toast.LENGTH_SHORT).show();
                 tocar(R.raw.win);
 
-                dog.setVisibility(View.INVISIBLE);
-                cat.setVisibility(View.INVISIBLE);
-                bird.setVisibility(View.INVISIBLE);
+                cachorro.setVisibility(View.INVISIBLE);
+                gato.setVisibility(View.INVISIBLE);
+                passaro.setVisibility(View.INVISIBLE);
 
                 btnSeguir.setVisibility(View.VISIBLE);
             } else {
