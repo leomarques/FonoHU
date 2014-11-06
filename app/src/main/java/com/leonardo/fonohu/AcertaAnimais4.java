@@ -11,14 +11,14 @@ import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
 
-@EFragment(R.layout.frag_acerta_animais1)
-public class AcertaAnimais1 extends Fragment {
+@EFragment(R.layout.frag_acerta_animais4)
+public class AcertaAnimais4 extends Fragment {
 
     public static final int TEMPO_CONTORNO = 2000;
     public static final int QOBJETOS = 3;
 
     @ViewById
-    ImageView cachorro, gato, passaro;
+    ImageView elefante, cobra, leao;
 
     @ViewById
     ImageView btnSeguir;
@@ -36,20 +36,20 @@ public class AcertaAnimais1 extends Fragment {
         sons[2] = R.raw.bird;
 
         imgViews = new ImageView[QOBJETOS];
-        imgViews[0] = cachorro;
-        imgViews[1] = gato;
-        imgViews[2] = passaro;
+        imgViews[0] = elefante;
+        imgViews[1] = cobra;
+        imgViews[2] = leao;
 
         imagens = new int[QOBJETOS * 3];
-        imagens[0] = R.drawable.cachorro;
-        imagens[1] = R.drawable.gato;
-        imagens[2] = R.drawable.passaro;
-        imagens[3] = R.drawable.cachorro_acerto;
-        imagens[4] = R.drawable.gato_acerto;
-        imagens[5] = R.drawable.passaro_acerto;
-        imagens[6] = R.drawable.cachorro_erro;
-        imagens[7] = R.drawable.gato_erro;
-        imagens[8] = R.drawable.passaro_erro;
+        imagens[0] = R.drawable.elefante;
+        imagens[1] = R.drawable.cobra;
+        imagens[2] = R.drawable.leao;
+        imagens[3] = R.drawable.elefante_acerto;
+        imagens[4] = R.drawable.cobra_acerto;
+        imagens[5] = R.drawable.leao_acerto;
+        imagens[6] = R.drawable.elefante_erro;
+        imagens[7] = R.drawable.cobra_erro;
+        imagens[8] = R.drawable.leao_erro;
 
         h = new Handler();
         somAtual = 0;
@@ -58,17 +58,17 @@ public class AcertaAnimais1 extends Fragment {
     }
 
     @Click
-    public void cachorro() {
+    public void elefante() {
         clicado(0);
     }
 
     @Click
-    public void gato() {
+    public void cobra() {
         clicado(1);
     }
 
     @Click
-    public void passaro() {
+    public void leao() {
         clicado(2);
     }
 
@@ -104,7 +104,7 @@ public class AcertaAnimais1 extends Fragment {
 
     @Click
     public void btnSeguir() {
-        getFragmentManager().beginTransaction().replace(getId(), new ApresentaAnimais2_()).commit();
+        getFragmentManager().beginTransaction().replace(getId(), new ApresentaAnimais5_()).commit();
     }
 
     @Override

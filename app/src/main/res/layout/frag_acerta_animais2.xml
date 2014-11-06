@@ -2,37 +2,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
-    tools:context="com.leonardo.fonohu.AcertaAnimais1">
+    android:background="@drawable/fazenda_casa"
+    tools:context="com.leonardo.fonohu.AcertaAnimais2">
 
     <ImageView
         android:layout_width="170dp"
         android:layout_height="170dp"
-        android:id="@+id/cachorro"
-        android:src="@drawable/cachorro"
-        android:layout_below="@+id/passaro"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="55dp" />
+        android:id="@+id/vaca"
+        android:src="@drawable/vaca"/>
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:id="@+id/gato"
-        android:src="@drawable/galinha"
-        android:layout_toStartOf="@+id/passaro"
-        android:layout_alignBottom="@+id/cachorro"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/cavalo"
+        android:src="@drawable/cavalo"/>
 
     <ImageView
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:id="@+id/passaro"
-        android:src="@drawable/passaro"
-        android:layout_marginTop="124dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/galinha"
+        android:src="@drawable/galinha"/>
 
     <ImageView
         android:layout_width="150dp"

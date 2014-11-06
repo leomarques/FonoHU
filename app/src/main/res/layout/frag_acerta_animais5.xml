@@ -2,15 +2,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fazenda_fora"
-    tools:context="com.leonardo.fonohu.AcertaAnimais3">
+    android:background="@drawable/selva"
+    tools:context="com.leonardo.fonohu.AcertaAnimais5">
 
     <ImageView
         android:layout_width="170dp"
         android:layout_height="170dp"
-        android:id="@+id/bode"
-        android:src="@drawable/bode"
-        android:layout_below="@+id/pato"
+        android:id="@+id/macaco"
+        android:src="@drawable/macaco"
+        android:layout_below="@+id/lobo"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:onClick="setContentView"
@@ -19,18 +19,18 @@
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:id="@+id/porco"
-        android:src="@drawable/porco"
-        android:layout_toStartOf="@+id/pato"
-        android:layout_alignBottom="@+id/bode"
+        android:id="@+id/sapo"
+        android:src="@drawable/sapo"
+        android:layout_toStartOf="@+id/lobo"
+        android:layout_alignBottom="@+id/macaco"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <ImageView
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:id="@+id/pato"
-        android:src="@drawable/pato"
+        android:id="@+id/lobo"
+        android:src="@drawable/lobo"
         android:layout_marginTop="124dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />

@@ -7,31 +7,30 @@ import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
 
-@EFragment(R.layout.frag_apresenta_animais)
-public class ApresentaAnimais extends Fragment {
+@EFragment(R.layout.frag_apresenta_animais3)
+public class ApresentaAnimais3 extends Fragment {
 
     @ViewById
-    ImageView cachorro, gato, passaro, texto;
+    ImageView bode, porco, pato, texto;
 
     @Click
-    public void cachorro() {
+    public void bode() {
         App.inst().tocar(R.raw.dog);
     }
 
     @Click
-    public void gato() {
+    public void porco() {
         App.inst().tocar(R.raw.cat);
     }
 
     @Click
-    public void passaro() {
+    public void pato() {
         App.inst().tocar(R.raw.bird);
     }
 
-
     @Click
     public void btnOk() {
-        getFragmentManager().beginTransaction().replace(getId(), new AcertaAnimais1_()).commit();
+        getFragmentManager().beginTransaction().replace(getId(), new AcertaAnimais3_()).commit();
     }
 
     @Click

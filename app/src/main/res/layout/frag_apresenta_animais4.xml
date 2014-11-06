@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    tools:context="com.leonardo.fonohu.ApresentaAnimais">
+    tools:context="com.leonardo.fonohu.ApresentaAnimais4">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -18,29 +18,29 @@
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:id="@+id/cachorro"
+        android:id="@+id/elefante"
         android:layout_gravity="center"
-        android:src="@drawable/cachorro"
+        android:src="@drawable/elefante"
         android:layout_below="@+id/texto"
         android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:id="@+id/gato"
+        android:id="@+id/cobra"
         android:layout_gravity="left|bottom"
-        android:src="@drawable/gato"
-        android:layout_below="@+id/cachorro"
+        android:src="@drawable/cobra"
+        android:layout_below="@+id/elefante"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:id="@+id/passaro"
+        android:id="@+id/leao"
         android:layout_gravity="right|bottom"
-        android:src="@drawable/passaro"
-        android:layout_alignTop="@+id/gato"
+        android:src="@drawable/leao"
+        android:layout_alignTop="@+id/cobra"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -51,8 +51,8 @@
         android:src="@drawable/ok"
         android:paddingBottom="10dp"
         android:layout_alignTop="@+id/btnNo"
-        android:layout_alignLeft="@+id/cachorro"
-        android:layout_alignStart="@+id/cachorro" />
+        android:layout_alignLeft="@+id/elefante"
+        android:layout_alignStart="@+id/elefante" />
 
     <ImageView
         android:layout_width="70dp"
@@ -61,7 +61,7 @@
         android:id="@+id/btnNo"
         android:src="@drawable/no"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/cachorro"
-        android:layout_alignEnd="@+id/cachorro" />
+        android:layout_alignRight="@+id/elefante"
+        android:layout_alignEnd="@+id/elefante" />
 
 </RelativeLayout>
