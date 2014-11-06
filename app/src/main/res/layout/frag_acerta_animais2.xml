@@ -9,19 +9,27 @@
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:id="@+id/vaca"
-        android:src="@drawable/vaca"/>
+        android:src="@drawable/vaca"
+        android:layout_alignBottom="@+id/btnSeguir"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="220dp"
+        android:layout_height="200dp"
         android:id="@+id/cavalo"
-        android:src="@drawable/cavalo"/>
+        android:src="@drawable/cavalo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:id="@+id/galinha"
-        android:src="@drawable/galinha"/>
+        android:src="@drawable/galinha"
+        android:layout_below="@+id/btnSeguir"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <ImageView
         android:layout_width="150dp"
