@@ -31,9 +31,9 @@ public class AcertaAnimais3 extends Fragment {
     @AfterViews
     public void aoCriar() {
         sons = new int[QOBJETOS];
-        sons[0] = R.raw.dog;
-        sons[1] = R.raw.cat;
-        sons[2] = R.raw.bird;
+        sons[0] = R.raw.bode;
+        sons[1] = R.raw.porco;
+        sons[2] = R.raw.pato;
 
         imgViews = new ImageView[QOBJETOS];
         imgViews[0] = bode;

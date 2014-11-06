@@ -15,17 +15,17 @@ public class ApresentaAnimais5 extends Fragment {
 
     @Click
     public void macaco() {
-        App.inst().tocar(R.raw.dog);
+        App.inst().tocar(R.raw.macaco);
     }
 
     @Click
     public void sapo() {
-        App.inst().tocar(R.raw.cat);
+        App.inst().tocar(R.raw.sapo);
     }
 
     @Click
     public void lobo() {
-        App.inst().tocar(R.raw.bird);
+        App.inst().tocar(R.raw.lobo);
     }
 
     @Click

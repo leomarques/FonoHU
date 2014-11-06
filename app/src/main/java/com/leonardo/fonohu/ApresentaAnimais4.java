@@ -15,17 +15,17 @@ public class ApresentaAnimais4 extends Fragment {
 
     @Click
     public void elefante() {
-        App.inst().tocar(R.raw.dog);
+        App.inst().tocar(R.raw.elefante);
     }
 
     @Click
     public void cobra() {
-        App.inst().tocar(R.raw.cat);
+        App.inst().tocar(R.raw.cobra);
     }
 
     @Click
     public void leao() {
-        App.inst().tocar(R.raw.bird);
+        App.inst().tocar(R.raw.leao);
     }
 
     @Click
