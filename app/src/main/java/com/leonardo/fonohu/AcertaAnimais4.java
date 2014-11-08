@@ -87,10 +87,15 @@ public class AcertaAnimais4 extends Fragment {
                 Toast.makeText(getActivity(), R.string.parabens, Toast.LENGTH_SHORT).show();
                 App.inst().tocar(R.raw.win);
 
-                for (int i = 0; i < QOBJETOS; i++)
-                    imgViews[i].setVisibility(View.INVISIBLE);
+                h.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        for (int i = 0; i < QOBJETOS; i++)
+                            imgViews[i].setVisibility(View.INVISIBLE);
 
-                btnSeguir.setVisibility(View.VISIBLE);
+                        btnSeguir.setVisibility(View.VISIBLE);
+                    }
+                }, TEMPO_CONTORNO);
             } else {
                 Toast.makeText(getActivity(), R.string.acertou, Toast.LENGTH_SHORT).show();
                 App.inst().tocar(R.raw.win, sons[++somAtual]);
