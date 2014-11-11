@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.leonardo.fonohu.ApresentaTransp1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/texto"
+        android:layout_gravity="center_horizontal|top"
+        android:src="@drawable/toque_animais_texto"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/carro"
+        android:src="@drawable/carro"
+        android:layout_below="@+id/texto"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/moto"
+        android:layout_gravity="left|bottom"
+        android:src="@drawable/moto"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/carro" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/btnOk"
+        android:src="@drawable/ok"
+        android:paddingBottom="10dp"
+        android:layout_alignTop="@+id/btnNo"
+        android:layout_alignLeft="@+id/carro"
+        android:layout_alignStart="@+id/carro" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/btnNo"
+        android:src="@drawable/no"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/carro"
+        android:layout_alignEnd="@+id/carro" />
+
+</RelativeLayout>

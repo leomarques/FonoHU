@@ -13,7 +13,6 @@
         android:layout_below="@+id/passaro"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:onClick="setContentView"
         android:layout_marginTop="55dp" />
 
     <ImageView

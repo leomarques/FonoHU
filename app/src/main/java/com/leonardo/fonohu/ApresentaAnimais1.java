@@ -11,7 +11,7 @@ import org.androidannotations.annotations.ViewById;
 public class ApresentaAnimais1 extends Fragment {
 
     @ViewById
-    ImageView cachorro, gato, passaro, texto;
+    ImageView cachorro, gato, passaro;
 
     @Click
     public void cachorro() {

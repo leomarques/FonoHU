@@ -11,12 +11,18 @@ import org.androidannotations.annotations.ViewById;
 public class MenuPrincipal extends Fragment {
 
     @ViewById
-    ImageView btnAnimais;
+    ImageView btnAnimais, btnTransporte;
 
     @Click
     void btnAnimais() {
-        btnAnimais.setImageResource(R.drawable.btn_animais_clicado);
+        //btnAnimais.setImageResource(R.drawable.btn_animais_clicado);
         getFragmentManager().beginTransaction().replace(getId(), new ComecaAnimais_()).commit();
+    }
+
+    @Click
+    void btnTransporte() {
+        //btnTransporte.setImageResource(R.drawable.btn_animais_clicado);
+        getFragmentManager().beginTransaction().replace(getId(), new ComecaTransp_()).commit();
     }
 
 }

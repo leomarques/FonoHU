@@ -8,5 +8,6 @@
     <string name="errou">Errou!</string>
     <string name="qualanimal">Que animal é esse?</string>
     <string name="parabens">Parabéns!</string>
+    <string name="qual_transp">Que transporte é esse?</string>
 
 </resources>
