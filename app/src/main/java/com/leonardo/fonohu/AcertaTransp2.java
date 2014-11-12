@@ -31,9 +31,9 @@ public class AcertaTransp2 extends Fragment {
     @AfterViews
     public void aoCriar() {
         sons = new int[QOBJETOS];
-        sons[0] = R.raw.vaca;
-        sons[1] = R.raw.cavalo;
-        sons[2] = R.raw.galinha;
+        sons[0] = R.raw.caminhao;
+        sons[1] = R.raw.onibus;
+        sons[2] = R.raw.barco;
 
         imgViews = new ImageView[QOBJETOS];
         imgViews[0] = caminhao;

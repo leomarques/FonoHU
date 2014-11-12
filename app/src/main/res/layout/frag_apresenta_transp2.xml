@@ -10,14 +10,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/texto"
         android:layout_gravity="center_horizontal|top"
-        android:src="@drawable/toque_animais_texto"
-        android:layout_marginTop="35dp"
+        android:src="@drawable/toque_transp_texto"
+        android:layout_marginTop="30dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_height="150dp"
         android:id="@+id/caminhao"
         android:layout_gravity="center"
         android:src="@drawable/caminhao"
@@ -26,7 +26,7 @@
 
     <ImageView
         android:layout_width="220dp"
-        android:layout_height="220dp"
+        android:layout_height="150dp"
         android:id="@+id/onibus"
         android:layout_gravity="left|bottom"
         android:src="@drawable/onibus"

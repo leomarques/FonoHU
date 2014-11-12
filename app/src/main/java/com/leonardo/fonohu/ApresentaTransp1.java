@@ -15,12 +15,12 @@ public class ApresentaTransp1 extends Fragment {
 
     @Click
     public void carro() {
-        App.inst().tocar(R.raw.dog);
+        App.inst().tocar(R.raw.carro);
     }
 
     @Click
     public void moto() {
-        App.inst().tocar(R.raw.cat);
+        App.inst().tocar(R.raw.moto);
     }
 
     @Click

@@ -15,17 +15,17 @@ public class ApresentaTransp2 extends Fragment {
 
     @Click
     public void caminhao() {
-        App.inst().tocar(R.raw.dog);
+        App.inst().tocar(R.raw.caminhao);
     }
 
     @Click
     public void onibus() {
-        App.inst().tocar(R.raw.cat);
+        App.inst().tocar(R.raw.onibus);
     }
 
     @Click
     public void barco() {
-        App.inst().tocar(R.raw.cat);
+        App.inst().tocar(R.raw.barco);
     }
 
     @Click
