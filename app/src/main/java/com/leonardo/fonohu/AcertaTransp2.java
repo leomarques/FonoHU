@@ -109,6 +109,7 @@ public class AcertaTransp2 extends Fragment {
 
     @Click
     public void btnSeguir() {
+        btnSeguir.setImageResource(R.drawable.btn_seguir_clicado);
         getFragmentManager().beginTransaction().replace(getId(), new ApresentaTransp3_()).commit();
     }
 
