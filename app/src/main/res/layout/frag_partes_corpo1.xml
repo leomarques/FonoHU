@@ -6,18 +6,19 @@
         android:layout_width="110dp"
         android:layout_height="150dp"
         android:id="@+id/corpo"
-        android:layout_centerVertical="true"
+        android:src="@drawable/corpo"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/corpo" />
+        android:layout_marginTop="150dp" />
 
     <ImageView
         android:layout_width="170dp"
         android:layout_height="134dp"
         android:paddingRight="5dp"
         android:id="@+id/cabeca"
-        android:layout_above="@+id/corpo"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/cabeca" />
+        android:src="@drawable/cabeca"
+        android:layout_above="@+id/braco_esq"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="35dp"
@@ -73,5 +74,25 @@
         android:layout_toRightOf="@+id/corpo"
         android:layout_below="@id/braco_dir"
         android:src="@drawable/mao_dir"/>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/btnOk"
+        android:src="@drawable/ok"
+        android:paddingBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/mao_esq"
+        android:layout_alignStart="@+id/mao_esq" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/btnNo"
+        android:paddingBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/mao_dir"
+        android:layout_alignEnd="@+id/mao_dir"
+        android:src="@drawable/no" />
 
 </RelativeLayout>

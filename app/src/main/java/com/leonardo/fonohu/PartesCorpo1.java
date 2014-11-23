@@ -7,11 +7,11 @@ import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
 
-@EFragment(R.layout.frag_partes_corpo)
-public class PartesCorpo extends Fragment {
+@EFragment(R.layout.frag_partes_corpo1)
+public class PartesCorpo1 extends Fragment {
 
     @ViewById
-    ImageView cabeca, braco_esq, braco_dir, perna, pe, mao_esq, mao_dir;
+    ImageView cabeca, braco_esq, braco_dir, perna, pe, mao_esq, mao_dir, btnNo, btnOk;
 
     @Click
     public void cabeca() {
@@ -46,5 +46,15 @@ public class PartesCorpo extends Fragment {
     @Click
     public void mao_dir() {
         App.inst().tocar(R.raw.mao);
+    }
+
+    @Click
+    public void btnOk() {
+        getFragmentManager().beginTransaction().replace(getId(), new PartesCorpo2_()).commit();
+    }
+
+    @Click
+    public void btnNo() {
+        getFragmentManager().beginTransaction().replace(getId(), new MenuPrincipal_()).commit();
     }
 }

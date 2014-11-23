@@ -28,7 +28,7 @@ public class MenuPrincipal extends Fragment {
     @Click
     void btnParteCorpo() {
         btnParteCorpo.setImageResource(R.drawable.btnpartecorpo_clicado);
-        getFragmentManager().beginTransaction().replace(getId(), new PartesCorpo_()).addToBackStack(null).commit();
+        getFragmentManager().beginTransaction().replace(getId(), new PartesCorpo1_()).commit();
     }
 
 }
