@@ -11,7 +11,7 @@ import org.androidannotations.annotations.ViewById;
 public class MenuPrincipal extends Fragment {
 
     @ViewById
-    ImageView btnAnimais, btnTransporte, btnParteCorpo;
+    ImageView btnAnimais, btnTransporte, btnParteCorpo, btnExpSimp;
 
     @Click
     void btnAnimais() {
@@ -29,6 +29,11 @@ public class MenuPrincipal extends Fragment {
     void btnParteCorpo() {
         btnParteCorpo.setImageResource(R.drawable.btnpartecorpo_clicado);
         getFragmentManager().beginTransaction().replace(getId(), new PartesCorpo1_()).commit();
+    }
+    @Click
+    void btnExpSimp() {
+        //btnExpSimp.setImageResource(R.drawable.btnpartecorpo_clicado);
+        getFragmentManager().beginTransaction().replace(getId(), new ExpSimp1_()).commit();
     }
 
 }
