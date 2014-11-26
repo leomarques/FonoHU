@@ -15,7 +15,7 @@ public class ExpSimp1 extends Fragment{
     public static final int TEMPO_ANIMACAO = 500;
 
     @ViewById
-    ImageView btnMaoCabeca, btnPegaPe, btnDarTchau, btnMandaBeijo, menino;
+    ImageView btnMaoCabeca, btnPegaPe, btnDarTchau, btnMandaBeijo, menino, btnOk, btnNo;
 
     private Handler h;
 
@@ -90,6 +90,16 @@ public class ExpSimp1 extends Fragment{
                 }, TEMPO_ANIMACAO);
             }
         }, TEMPO_ANIMACAO);
+    }
+
+    @Click
+    public void btnOk() {
+        getFragmentManager().beginTransaction().replace(getId(), new MenuPrincipal_()).commit();
+    }
+
+    @Click
+    public void btnNo() {
+        getFragmentManager().beginTransaction().replace(getId(), new MenuPrincipal_()).commit();
     }
 
     @Override
