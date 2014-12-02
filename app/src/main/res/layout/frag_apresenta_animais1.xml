@@ -6,62 +6,64 @@
     tools:context="com.leonardo.fonohu.ApresentaAnimais1">
 
     <ImageView
+        android:id="@+id/texto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/texto"
-        android:layout_gravity="center_horizontal|top"
-        android:src="@drawable/toque_animais_texto"
-        android:layout_marginTop="35dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/toque_animais_texto" />
 
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
         android:id="@+id/cachorro"
-        android:layout_gravity="center"
-        android:src="@drawable/cachorro"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_below="@+id/texto"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:src="@drawable/cachorro" />
 
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
         android:id="@+id/gato"
-        android:layout_gravity="left|bottom"
-        android:src="@drawable/gato"
-        android:layout_below="@+id/cachorro"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/cachorro"
+        android:layout_gravity="left|bottom"
+        android:src="@drawable/gato" />
+
+    <ImageView
         android:id="@+id/passaro"
-        android:layout_gravity="right|bottom"
-        android:src="@drawable/passaro"
-        android:layout_alignTop="@+id/gato"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignTop="@+id/gato"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/passaro" />
 
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:id="@+id/btnOk"
-        android:src="@drawable/ok"
-        android:paddingBottom="10dp"
-        android:layout_alignTop="@+id/btnNo"
-        android:layout_alignLeft="@+id/cachorro"
-        android:layout_alignStart="@+id/cachorro" />
-
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:paddingBottom="10dp"
-        android:id="@+id/btnNo"
-        android:src="@drawable/no"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/cachorro"
-        android:layout_alignEnd="@+id/cachorro" />
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/btnOk"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/ok" />
+
+        <ImageView
+            android:id="@+id/btnNo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/no" />
+    </LinearLayout>
 
 </RelativeLayout>

@@ -40,28 +40,31 @@
         android:id="@+id/leao"
         android:layout_gravity="right|bottom"
         android:src="@drawable/leao"
-        android:layout_above="@+id/btnNo"
+        android:layout_above="@+id/linearLayout2"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:id="@+id/btnOk"
-        android:src="@drawable/ok"
-        android:paddingBottom="10dp"
-        android:layout_alignTop="@+id/btnNo"
-        android:layout_alignLeft="@+id/elefante"
-        android:layout_alignStart="@+id/elefante" />
-
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:paddingBottom="10dp"
-        android:id="@+id/btnNo"
-        android:src="@drawable/no"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/elefante"
-        android:layout_alignEnd="@+id/elefante" />
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:id="@+id/linearLayout2">
+
+        <ImageView
+            android:id="@+id/btnOk"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/ok" />
+
+        <ImageView
+            android:id="@+id/btnNo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/no" />
+    </LinearLayout>
 
 </RelativeLayout>

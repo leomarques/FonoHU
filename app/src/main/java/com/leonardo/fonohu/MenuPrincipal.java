@@ -11,18 +11,18 @@ import org.androidannotations.annotations.ViewById;
 public class MenuPrincipal extends Fragment {
 
     @ViewById
-    ImageView btnAnimais, btnTransporte, btnParteCorpo, btnExpSimp;
+    ImageView btnAnimais, btnTransporte, btnParteCorpo, btnExpSimp, btnCores;
 
     @Click
     void btnAnimais() {
         btnAnimais.setImageResource(R.drawable.btn_animais_clicado);
-        getFragmentManager().beginTransaction().replace(getId(), new ComecaAnimais_()).commit();
+        getFragmentManager().beginTransaction().replace(getId(), new AcertaAnimais1_()).commit();
     }
 
     @Click
     void btnTransporte() {
         btnTransporte.setImageResource(R.drawable.btn_transporte_clicado);
-        getFragmentManager().beginTransaction().replace(getId(), new ComecaTransp_()).commit();
+        getFragmentManager().beginTransaction().replace(getId(), new AcertaTransp1_()).commit();
     }
 
     @Click
@@ -30,10 +30,17 @@ public class MenuPrincipal extends Fragment {
         btnParteCorpo.setImageResource(R.drawable.btnpartecorpo_clicado);
         getFragmentManager().beginTransaction().replace(getId(), new PartesCorpo1_()).commit();
     }
+
     @Click
     void btnExpSimp() {
-        //btnExpSimp.setImageResource(R.drawable.btnpartecorpo_clicado);
+        btnExpSimp.setImageResource(R.drawable.btn_expsimp_clicado);
         getFragmentManager().beginTransaction().replace(getId(), new ExpSimp1_()).commit();
+    }
+
+    @Click
+    void btnCores() {
+        btnCores.setImageResource(R.drawable.btn_cores_clicado);
+        getFragmentManager().beginTransaction().replace(getId(), new Cores_()).commit();
     }
 
 }

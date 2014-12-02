@@ -18,10 +18,7 @@ public class AcertaAnimais1 extends Fragment {
     public static final int QOBJETOS = 3;
 
     @ViewById
-    ImageView cachorro, gato, passaro;
-
-    @ViewById
-    ImageView btnSeguir;
+    ImageView cachorro, gato, passaro, btnSeguir;
 
     int[] sons, imagens;
     ImageView[] imgViews;

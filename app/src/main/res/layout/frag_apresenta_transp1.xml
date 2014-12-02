@@ -32,24 +32,26 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/carro" />
 
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:id="@+id/btnOk"
-        android:src="@drawable/ok"
-        android:paddingBottom="10dp"
-        android:layout_alignTop="@+id/btnNo"
-        android:layout_alignLeft="@+id/carro"
-        android:layout_alignStart="@+id/carro" />
-
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:paddingBottom="10dp"
-        android:id="@+id/btnNo"
-        android:src="@drawable/no"
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/carro"
-        android:layout_alignEnd="@+id/carro" />
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/btnOk"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/ok" />
+
+        <ImageView
+            android:id="@+id/btnNo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/no" />
+    </LinearLayout>
 
 </RelativeLayout>

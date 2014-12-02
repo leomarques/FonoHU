@@ -11,7 +11,7 @@ import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
 
 @EFragment(R.layout.frag_exps)
-public class ExpSimp1 extends Fragment{
+public class ExpSimp1 extends Fragment {
     public static final int TEMPO_ANIMACAO = 500;
 
     @ViewById
