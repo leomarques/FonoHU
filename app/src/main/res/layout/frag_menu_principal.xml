@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="left|top"
     android:id="@+id/menuPrincipalLayout"
+    android:background="@color/branco"
     tools:context="com.leonardo.fonohu.MenuPrincipal">
 
     <ImageView
