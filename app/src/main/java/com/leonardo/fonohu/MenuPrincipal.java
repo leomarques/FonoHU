@@ -16,13 +16,13 @@ public class MenuPrincipal extends Fragment {
     @Click
     void btnAnimais() {
         btnAnimais.setImageResource(R.drawable.btn_animais_clicado);
-        getFragmentManager().beginTransaction().replace(getId(), new AcertaAnimais1_()).commit();
+        getFragmentManager().beginTransaction().replace(getId(), new ApresentaAnimais1_()).commit();
     }
 
     @Click
     void btnTransporte() {
         btnTransporte.setImageResource(R.drawable.btn_transporte_clicado);
-        getFragmentManager().beginTransaction().replace(getId(), new AcertaTransp1_()).commit();
+        getFragmentManager().beginTransaction().replace(getId(), new ApresentaTransp1_()).commit();
     }
 
     @Click

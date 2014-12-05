@@ -50,28 +50,13 @@
             android:src="@drawable/manda_beijo" />
     </LinearLayout>
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/btnOk"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true">
-
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:id="@+id/btnOk"
-            android:src="@drawable/ok"
-            android:paddingBottom="10dp"/>
-
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:id="@+id/btnNo"
-            android:paddingBottom="10dp"
-            android:src="@drawable/no"
-            android:layout_marginLeft="30dp"
-            android:layout_toRightOf="@+id/btnOk"/>
-
-        </RelativeLayout>
+        android:paddingBottom="10dp"
+        android:src="@drawable/btn_seguir" />
 
 </RelativeLayout>

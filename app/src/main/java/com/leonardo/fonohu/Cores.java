@@ -12,9 +12,4 @@ public class Cores extends Fragment {
     public void btnOk() {
         getFragmentManager().beginTransaction().replace(getId(), new CorCachorro_()).commit();
     }
-
-    @Click
-    public void btnNo() {
-        getFragmentManager().beginTransaction().replace(getId(), new MenuPrincipal_()).commit();
-    }
 }

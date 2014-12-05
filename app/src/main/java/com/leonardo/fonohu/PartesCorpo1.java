@@ -11,7 +11,7 @@ import org.androidannotations.annotations.ViewById;
 public class PartesCorpo1 extends Fragment {
 
     @ViewById
-    ImageView cabeca, braco_esq, braco_dir, perna, pe, mao_esq, mao_dir, btnNo, btnOk;
+    ImageView cabeca, braco_esq, braco_dir, perna, pe, mao_esq, mao_dir, btnOk;
 
     @Click
     public void cabeca() {
@@ -51,10 +51,5 @@ public class PartesCorpo1 extends Fragment {
     @Click
     public void btnOk() {
         getFragmentManager().beginTransaction().replace(getId(), new PartesCorpo2_()).commit();
-    }
-
-    @Click
-    public void btnNo() {
-        getFragmentManager().beginTransaction().replace(getId(), new MenuPrincipal_()).commit();
     }
 }

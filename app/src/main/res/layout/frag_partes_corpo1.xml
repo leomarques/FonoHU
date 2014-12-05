@@ -77,23 +77,12 @@
         android:src="@drawable/mao_dir"/>
 
     <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
         android:id="@+id/btnOk"
-        android:src="@drawable/ok"
-        android:paddingBottom="10dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/mao_esq"
-        android:layout_alignStart="@+id/mao_esq" />
-
-    <ImageView
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:id="@+id/btnNo"
-        android:paddingBottom="10dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/mao_dir"
-        android:layout_alignEnd="@+id/mao_dir"
-        android:src="@drawable/no" />
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"
+        android:src="@drawable/btn_seguir" />
 
 </RelativeLayout>
