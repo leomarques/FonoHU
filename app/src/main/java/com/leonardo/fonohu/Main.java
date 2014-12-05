@@ -11,7 +11,7 @@ public class Main extends Activity {
 
     @AfterViews
     void aoCriar() {
-        getFragmentManager().beginTransaction().replace(R.id.mainLayout, new MenuPrincipal_(), "menu").commit();
+        getFragmentManager().beginTransaction().replace(R.id.mainLayout, new EscolheSexo_(), "menu").commit();
     }
 
     @Override
