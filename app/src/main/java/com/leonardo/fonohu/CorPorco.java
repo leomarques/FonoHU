@@ -46,14 +46,14 @@ public class CorPorco extends Fragment {
         imagens[1] = R.drawable.porco_azul;
         imagens[2] = R.drawable.porco_verde;
         imagens[3] = R.drawable.porco_vermelho;
-        imagens[4] = R.drawable.porco_amarelo;
-        imagens[5] = R.drawable.porco_azul;
-        imagens[6] = R.drawable.porco_verde;
-        imagens[7] = R.drawable.porco_vermelho;
-        imagens[8] = R.drawable.porco_amarelo;
-        imagens[9] = R.drawable.porco_azul;
-        imagens[10] = R.drawable.porco_verde;
-        imagens[11] = R.drawable.porco_vermelho;
+        imagens[4] = R.drawable.porco_amarelo_acerto;
+        imagens[5] = R.drawable.porco_azul_acerto;
+        imagens[6] = R.drawable.porco_verde_acerto;
+        imagens[7] = R.drawable.porco_vermelho_acerto;
+        imagens[8] = R.drawable.porco_amarelo_erro;
+        imagens[9] = R.drawable.porco_azul_erro;
+        imagens[10] = R.drawable.porco_verde_erro;
+        imagens[11] = R.drawable.porco_vermelho_erro;
 
         h = new Handler();
 

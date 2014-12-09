@@ -15,17 +15,17 @@ public class PartesCorpo2 extends Fragment {
 
     @Click
     public void olhos() {
-        App.inst().tocar(R.raw.olhos);
+        App.inst().tocar(R.raw.olho_o);
     }
 
     @Click
     public void nariz() {
-        App.inst().tocar(R.raw.nariz);
+        App.inst().tocar(R.raw.nariz_o);
     }
 
     @Click
     public void boca() {
-        App.inst().tocar(R.raw.boca);
+        App.inst().tocar(R.raw.boca_o);
     }
 
     @Click

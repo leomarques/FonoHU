@@ -45,15 +45,15 @@ public class CorCachorro extends Fragment {
         imagens[0] = R.drawable.cachorro_amarelo;
         imagens[1] = R.drawable.cachorro_azul;
         imagens[2] = R.drawable.cachorro_verde;
-        imagens[3] = R.drawable.cachorro_vermelho;
-        imagens[4] = R.drawable.cachorro_amarelo;
-        imagens[5] = R.drawable.cachorro_azul;
-        imagens[6] = R.drawable.cachorro_verde;
-        imagens[7] = R.drawable.cachorro_vermelho;
-        imagens[8] = R.drawable.cachorro_amarelo;
-        imagens[9] = R.drawable.cachorro_azul;
-        imagens[10] = R.drawable.cachorro_verde;
-        imagens[11] = R.drawable.cachorro_vermelho;
+        imagens[3] = R.drawable.cachorro_vermelho_acerto;
+        imagens[4] = R.drawable.cachorro_amarelo_acerto;
+        imagens[5] = R.drawable.cachorro_azul_acerto;
+        imagens[6] = R.drawable.cachorro_verde_acerto;
+        imagens[7] = R.drawable.cachorro_vermelho_acerto;
+        imagens[8] = R.drawable.cachorro_amarelo_erro;
+        imagens[9] = R.drawable.cachorro_azul_erro;
+        imagens[10] = R.drawable.cachorro_verde_erro;
+        imagens[11] = R.drawable.cachorro_vermelho_erro;
 
         h = new Handler();
 

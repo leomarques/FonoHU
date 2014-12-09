@@ -6,30 +6,30 @@
     tools:context="com.leonardo.fonohu.AcertaTransp1">
 
     <ImageView
+        android:id="@+id/carro"
         android:layout_width="220dp"
         android:layout_height="220dp"
-        android:id="@+id/carro"
-        android:src="@drawable/carro"
         android:layout_alignBottom="@+id/btnSeguir"
+        android:layout_alignEnd="@+id/btnSeguir"
         android:layout_alignRight="@+id/btnSeguir"
-        android:layout_alignEnd="@+id/btnSeguir" />
+        android:src="@drawable/carro" />
 
     <ImageView
+        android:id="@+id/moto"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:id="@+id/moto"
-        android:src="@drawable/moto"
-        android:layout_below="@+id/btnSeguir"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@+id/btnSeguir"
+        android:src="@drawable/moto" />
 
     <ImageView
+        android:id="@+id/btnSeguir"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:id="@+id/btnSeguir"
-        android:visibility="invisible"
-        android:src="@drawable/btn_seguir"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:src="@drawable/btn_seguir"
+        android:visibility="invisible" />
 
 </RelativeLayout>

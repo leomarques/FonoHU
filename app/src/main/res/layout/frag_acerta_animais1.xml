@@ -6,41 +6,41 @@
     tools:context="com.leonardo.fonohu.AcertaAnimais1">
 
     <ImageView
+        android:id="@+id/cachorro"
         android:layout_width="170dp"
         android:layout_height="170dp"
-        android:id="@+id/cachorro"
-        android:src="@drawable/cachorro"
-        android:layout_below="@+id/passaro"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="55dp" />
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/passaro"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/cachorro" />
 
     <ImageView
+        android:id="@+id/gato"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:id="@+id/gato"
-        android:src="@drawable/gato"
-        android:layout_toStartOf="@+id/passaro"
         android:layout_alignBottom="@+id/cachorro"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/passaro"
+        android:src="@drawable/gato" />
 
     <ImageView
+        android:id="@+id/passaro"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:id="@+id/passaro"
-        android:src="@drawable/passaro"
-        android:layout_marginTop="124dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="124dp"
+        android:src="@drawable/passaro" />
 
     <ImageView
+        android:id="@+id/btnSeguir"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:id="@+id/btnSeguir"
-        android:visibility="invisible"
-        android:src="@drawable/btn_seguir"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:src="@drawable/btn_seguir"
+        android:visibility="invisible" />
 
 </RelativeLayout>

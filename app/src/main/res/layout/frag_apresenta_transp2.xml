@@ -6,43 +6,43 @@
     tools:context="com.leonardo.fonohu.ApresentaTransp2">
 
     <ImageView
+        android:id="@+id/texto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/texto"
-        android:layout_gravity="center_horizontal|top"
-        android:src="@drawable/toque_transp_texto"
-        android:layout_marginTop="30dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/toque_transp_texto" />
 
     <ImageView
+        android:id="@+id/caminhao"
         android:layout_width="200dp"
         android:layout_height="150dp"
-        android:id="@+id/caminhao"
-        android:layout_gravity="center"
-        android:src="@drawable/caminhao"
         android:layout_below="@+id/texto"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:src="@drawable/caminhao" />
 
     <ImageView
+        android:id="@+id/onibus"
         android:layout_width="220dp"
         android:layout_height="150dp"
-        android:id="@+id/onibus"
-        android:layout_gravity="left|bottom"
-        android:src="@drawable/onibus"
-        android:layout_below="@+id/caminhao"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/caminhao"
+        android:layout_gravity="left|bottom"
+        android:src="@drawable/onibus" />
 
     <ImageView
+        android:id="@+id/barco"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:id="@+id/barco"
-        android:layout_gravity="right|bottom"
-        android:src="@drawable/barco"
-        android:layout_below="@+id/caminhao"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@+id/caminhao"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/barco" />
 
     <ImageView
         android:id="@+id/btnOk"

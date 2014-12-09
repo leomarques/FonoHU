@@ -6,31 +6,31 @@
     tools:context="com.leonardo.fonohu.ApresentaTransp1">
 
     <ImageView
+        android:id="@+id/texto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/texto"
-        android:layout_gravity="center_horizontal|top"
-        android:src="@drawable/toque_transp_texto"
-        android:layout_marginTop="30dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        android:id="@+id/carro"
-        android:src="@drawable/carro"
-        android:layout_below="@+id/texto"
-        android:layout_centerHorizontal="true" />
-
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        android:id="@+id/moto"
-        android:layout_gravity="left|bottom"
-        android:src="@drawable/moto"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/carro" />
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/toque_transp_texto" />
+
+    <ImageView
+        android:id="@+id/carro"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/texto"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/carro" />
+
+    <ImageView
+        android:id="@+id/moto"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/carro"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="left|bottom"
+        android:src="@drawable/moto" />
 
     <ImageView
         android:id="@+id/btnOk"

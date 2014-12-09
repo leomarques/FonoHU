@@ -1,45 +1,45 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+    android:id="@+id/menuPrincipalLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="left|top"
-    android:id="@+id/menuPrincipalLayout"
     android:background="@color/branco"
+    android:orientation="vertical"
     tools:context="com.leonardo.fonohu.MenuPrincipal">
 
     <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="1"
         android:id="@+id/btnAnimais"
-        android:src="@drawable/btn_animais"/>
-
-    <ImageView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="1"
+        android:src="@drawable/btn_animais" />
+
+    <ImageView
         android:id="@+id/btnTransporte"
-        android:src="@drawable/btn_transporte"/>
-
-    <ImageView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="1"
+        android:src="@drawable/btn_transporte" />
+
+    <ImageView
         android:id="@+id/btnParteCorpo"
-        android:src="@drawable/btn_partes_corpo"/>
-
-    <ImageView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="1"
+        android:src="@drawable/btn_partes_corpo" />
+
+    <ImageView
         android:id="@+id/btnExpSimp"
-        android:src="@drawable/btn_acoes"/>
-
-    <ImageView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_weight="1"
+        android:src="@drawable/btn_acoes" />
+
+    <ImageView
         android:id="@+id/btnCores"
-        android:src="@drawable/btn_cores"/>
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:src="@drawable/btn_cores" />
 </LinearLayout>

@@ -6,39 +6,39 @@
     tools:context="com.leonardo.fonohu.AcertaTransp2">
 
     <ImageView
+        android:id="@+id/caminhao"
         android:layout_width="170dp"
         android:layout_height="150dp"
-        android:id="@+id/caminhao"
-        android:src="@drawable/caminhao"
         android:layout_alignParentTop="true"
         android:layout_toLeftOf="@+id/barco"
-        android:layout_toStartOf="@+id/barco" />
+        android:layout_toStartOf="@+id/barco"
+        android:src="@drawable/caminhao" />
 
     <ImageView
+        android:id="@+id/onibus"
         android:layout_width="250dp"
         android:layout_height="100dp"
-        android:id="@+id/onibus"
-        android:src="@drawable/onibus"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_below="@+id/caminhao"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:src="@drawable/onibus" />
 
     <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
         android:id="@+id/barco"
-        android:src="@drawable/barco"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/barco" />
+
+    <ImageView
         android:id="@+id/btnSeguir"
-        android:visibility="invisible"
-        android:src="@drawable/btn_seguir"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:src="@drawable/btn_seguir"
+        android:visibility="invisible" />
 
 </RelativeLayout>

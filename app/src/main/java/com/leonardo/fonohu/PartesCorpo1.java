@@ -11,11 +11,11 @@ import org.androidannotations.annotations.ViewById;
 public class PartesCorpo1 extends Fragment {
 
     @ViewById
-    ImageView cabeca, braco_esq, braco_dir, perna, pe, mao_esq, mao_dir, btnOk;
+    ImageView cabeca, braco_esq, braco_dir, perna, pe, mao_esq, mao_dir, corpo, btnOk;
 
     @Click
     public void cabeca() {
-        App.inst().tocar(R.raw.cabeca);
+        App.inst().tocar(R.raw.cabeca_o);
     }
 
     @Click
@@ -35,17 +35,22 @@ public class PartesCorpo1 extends Fragment {
 
     @Click
     public void pe() {
-        App.inst().tocar(R.raw.pe);
+        App.inst().tocar(R.raw.pe_o);
     }
 
     @Click
     public void mao_esq() {
-        App.inst().tocar(R.raw.mao);
+        App.inst().tocar(R.raw.mao_o);
     }
 
     @Click
     public void mao_dir() {
-        App.inst().tocar(R.raw.mao);
+        App.inst().tocar(R.raw.mao_o);
+    }
+
+    @Click
+    public void corpo() {
+        App.inst().tocar(R.raw.barriga_o);
     }
 
     @Click

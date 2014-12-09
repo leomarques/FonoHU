@@ -21,7 +21,7 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:paddingEnd="20dp"
-                android:paddingStart="20dp"/>
+                android:paddingStart="20dp" />
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -29,7 +29,7 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:paddingEnd="20dp"
-                android:paddingStart="20dp"/>
+                android:paddingStart="20dp" />
         </LinearLayout>
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -43,7 +43,7 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:paddingEnd="20dp"
-                android:paddingStart="20dp"/>
+                android:paddingStart="20dp" />
 
             <ImageView
                 android:id="@+id/imageView4"
@@ -51,7 +51,7 @@
                 android:layout_height="fill_parent"
                 android:layout_weight="1"
                 android:paddingEnd="20dp"
-                android:paddingStart="20dp"/>
+                android:paddingStart="20dp" />
         </LinearLayout>
     </RelativeLayout>
 

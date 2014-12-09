@@ -6,39 +6,39 @@
     tools:context="com.leonardo.fonohu.AcertaAnimais3">
 
     <ImageView
+        android:id="@+id/bode"
         android:layout_width="170dp"
         android:layout_height="170dp"
-        android:id="@+id/bode"
-        android:src="@drawable/bode"
         android:layout_above="@+id/porco"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:src="@drawable/bode" />
 
     <ImageView
+        android:id="@+id/porco"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:id="@+id/porco"
-        android:src="@drawable/porco"
         android:layout_above="@+id/pato"
+        android:layout_toEndOf="@+id/bode"
         android:layout_toRightOf="@+id/bode"
-        android:layout_toEndOf="@+id/bode" />
+        android:src="@drawable/porco" />
 
     <ImageView
+        android:id="@+id/pato"
         android:layout_width="170dp"
         android:layout_height="80dp"
-        android:id="@+id/pato"
-        android:src="@drawable/pato"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:src="@drawable/pato" />
 
     <ImageView
+        android:id="@+id/btnSeguir"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:id="@+id/btnSeguir"
-        android:visibility="invisible"
-        android:src="@drawable/btn_seguir"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:src="@drawable/btn_seguir"
+        android:visibility="invisible" />
 
 </RelativeLayout>

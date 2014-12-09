@@ -6,39 +6,39 @@
     tools:context="com.leonardo.fonohu.AcertaAnimais5">
 
     <ImageView
+        android:id="@+id/macaco"
         android:layout_width="170dp"
         android:layout_height="170dp"
-        android:id="@+id/macaco"
-        android:src="@drawable/macaco"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="82dp" />
+        android:layout_marginTop="82dp"
+        android:src="@drawable/macaco" />
 
     <ImageView
+        android:id="@+id/sapo"
         android:layout_width="110dp"
         android:layout_height="110dp"
-        android:id="@+id/sapo"
-        android:src="@drawable/sapo"
         android:layout_below="@+id/macaco"
+        android:layout_toEndOf="@+id/macaco"
         android:layout_toRightOf="@+id/macaco"
-        android:layout_toEndOf="@+id/macaco" />
+        android:src="@drawable/sapo" />
 
     <ImageView
+        android:id="@+id/lobo"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:id="@+id/lobo"
-        android:src="@drawable/lobo"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:src="@drawable/lobo" />
 
     <ImageView
+        android:id="@+id/btnSeguir"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:id="@+id/btnSeguir"
-        android:visibility="invisible"
-        android:src="@drawable/btn_seguir"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:src="@drawable/btn_seguir"
+        android:visibility="invisible" />
 
 </RelativeLayout>

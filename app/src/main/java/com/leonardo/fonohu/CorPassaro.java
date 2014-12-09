@@ -46,14 +46,14 @@ public class CorPassaro extends Fragment {
         imagens[1] = R.drawable.passaro_azul;
         imagens[2] = R.drawable.passaro_verde;
         imagens[3] = R.drawable.passaro_vermelho;
-        imagens[4] = R.drawable.passaro_amarelo;
-        imagens[5] = R.drawable.passaro_azul;
-        imagens[6] = R.drawable.passaro_verde;
-        imagens[7] = R.drawable.passaro_vermelho;
-        imagens[8] = R.drawable.passaro_amarelo;
-        imagens[9] = R.drawable.passaro_azul;
-        imagens[10] = R.drawable.passaro_verde;
-        imagens[11] = R.drawable.passaro_vermelho;
+        imagens[4] = R.drawable.passaro_amarelo_acerto;
+        imagens[5] = R.drawable.passaro_azul_acerto;
+        imagens[6] = R.drawable.passaro_verde_acerto;
+        imagens[7] = R.drawable.passaro_vermelho_acerto;
+        imagens[8] = R.drawable.passaro_amarelo_erro;
+        imagens[9] = R.drawable.passaro_azul_erro;
+        imagens[10] = R.drawable.passaro_verde_erro;
+        imagens[11] = R.drawable.passaro_vermelho_erro;
 
         h = new Handler();
 
