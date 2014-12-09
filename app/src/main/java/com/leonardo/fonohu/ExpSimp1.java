@@ -2,7 +2,9 @@ package com.leonardo.fonohu;
 
 
 import android.app.Fragment;
+import android.content.SharedPreferences;
 import android.os.Handler;
+import android.util.Log;
 import android.widget.ImageView;
 
 import org.androidannotations.annotations.AfterViews;
@@ -18,10 +20,17 @@ public class ExpSimp1 extends Fragment {
     ImageView btnMaoCabeca, btnPegaPe, btnDarTchau, btnMandaBeijo, menino, btnOk;
 
     private Handler h;
+    boolean s;
 
     @AfterViews
     public void aoCriar() {
         h = new Handler();
+
+        SharedPreferences pref = App.inst().getSharedPreferences("MyPref", 0);
+        s = pref.getBoolean("sexo", true);
+        Log.i("jabaliano", "" + s);
+
+        menino.setImageResource(s ? R.drawable.menino_normal : R.drawable.menina_normal);
     }
 
     @Click
@@ -29,12 +38,12 @@ public class ExpSimp1 extends Fragment {
         h.postDelayed(new Runnable() {
             @Override
             public void run() {
-                menino.setImageResource(R.drawable.menino_mao_cabeca);
+                menino.setImageResource(s ? R.drawable.menino_mao_cabeca : R.drawable.menina_aponta);
 
                 h.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        menino.setImageResource(R.drawable.menino_normal);
+                        menino.setImageResource(s ? R.drawable.menino_normal : R.drawable.menina_normal);
                     }
                 }, TEMPO_ANIMACAO);
             }
@@ -46,12 +55,12 @@ public class ExpSimp1 extends Fragment {
         h.postDelayed(new Runnable() {
             @Override
             public void run() {
-                menino.setImageResource(R.drawable.menino_pega_pe);
+                menino.setImageResource(s ? R.drawable.menino_pega_pe : R.drawable.menina_pega_pe);
 
                 h.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        menino.setImageResource(R.drawable.menino_normal);
+                        menino.setImageResource(s ? R.drawable.menino_normal : R.drawable.menina_normal);
                     }
                 }, TEMPO_ANIMACAO);
             }
@@ -63,12 +72,12 @@ public class ExpSimp1 extends Fragment {
         h.postDelayed(new Runnable() {
             @Override
             public void run() {
-                menino.setImageResource(R.drawable.menino_dar_tchau);
+                menino.setImageResource(s ? R.drawable.menino_dar_tchau : R.drawable.menina_dar_tchau);
 
                 h.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        menino.setImageResource(R.drawable.menino_normal);
+                        menino.setImageResource(s ? R.drawable.menino_normal : R.drawable.menina_normal);
                     }
                 }, TEMPO_ANIMACAO);
             }
@@ -80,12 +89,12 @@ public class ExpSimp1 extends Fragment {
         h.postDelayed(new Runnable() {
             @Override
             public void run() {
-                menino.setImageResource(R.drawable.menino_beijo);
+                menino.setImageResource(s ? R.drawable.menino_beijo : R.drawable.menina_manda_beijo);
 
                 h.postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        menino.setImageResource(R.drawable.menino_normal);
+                        menino.setImageResource(s ? R.drawable.menino_normal : R.drawable.menina_normal);
                     }
                 }, TEMPO_ANIMACAO);
             }
