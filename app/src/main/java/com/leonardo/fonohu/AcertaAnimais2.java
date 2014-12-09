@@ -43,13 +43,13 @@ public class AcertaAnimais2 extends Fragment {
         imagens = new int[QOBJETOS * 3];
         imagens[0] = R.drawable.vaca;
         imagens[1] = R.drawable.cavalo;
-        imagens[2] = R.drawable.galinha;
+        imagens[2] = R.drawable.galo;
         imagens[3] = R.drawable.vaca_acerto;
         imagens[4] = R.drawable.cavalo_acerto;
-        imagens[5] = R.drawable.galinha_acerto;
+        imagens[5] = R.drawable.galo_acerto;
         imagens[6] = R.drawable.vaca_erro;
         imagens[7] = R.drawable.cavalo_erro;
-        imagens[8] = R.drawable.galinha_erro;
+        imagens[8] = R.drawable.galo_erro;
 
         h = new Handler();
         somAtual = 0;

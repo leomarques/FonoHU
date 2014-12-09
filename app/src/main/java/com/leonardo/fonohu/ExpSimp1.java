@@ -35,6 +35,7 @@ public class ExpSimp1 extends Fragment {
 
     @Click
     public void btnMaoCabeca() {
+        App.inst().tocar(s ? R.raw.aponte_cabeca_o : R.raw.aponte_cabeca_a);
         h.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -52,6 +53,7 @@ public class ExpSimp1 extends Fragment {
 
     @Click
     public void btnPegaPe() {
+        App.inst().tocar(s ? R.raw.pegue_pe_o : R.raw.pegue_pe_a);
         h.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -69,6 +71,7 @@ public class ExpSimp1 extends Fragment {
 
     @Click
     public void btnDarTchau() {
+        App.inst().tocar(s ? R.raw.dar_tchau_o : R.raw.dar_tchau_a);
         h.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -86,6 +89,7 @@ public class ExpSimp1 extends Fragment {
 
     @Click
     public void btnMandaBeijo() {
+        App.inst().tocar(s ? R.raw.mande_beijo_o : R.raw.mande_beijo_a);
         h.postDelayed(new Runnable() {
             @Override
             public void run() {

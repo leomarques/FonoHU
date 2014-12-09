@@ -1,10 +1,10 @@
 package com.leonardo.fonohu;
 
 import android.app.Fragment;
+import android.content.SharedPreferences;
 import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Click;
@@ -24,14 +24,19 @@ public class ExpSimp2 extends Fragment {
     ImageView[] imgViews;
     int somAtual;
     private Handler h;
+    private boolean s;
 
     @AfterViews
     public void aoCriar() {
-        sons = new int[QOBJETOS];
-        sons[0] = R.raw.dog;
-        sons[1] = R.raw.cat;
-        sons[2] = R.raw.bird;
-        sons[3] = R.raw.bird;
+        sons = new int[QOBJETOS * 2];
+        sons[0] = R.raw.dar_tchau_o;
+        sons[1] = R.raw.aponte_cabeca_o;
+        sons[2] = R.raw.pegue_pe_o;
+        sons[3] = R.raw.mande_beijo_o;
+        sons[4] = R.raw.dar_tchau_a;
+        sons[5] = R.raw.aponte_cabeca_a;
+        sons[6] = R.raw.pegue_pe_a;
+        sons[7] = R.raw.mande_beijo_a;
 
         imgViews = new ImageView[QOBJETOS];
         imgViews[0] = btnDarTchau;
@@ -54,8 +59,12 @@ public class ExpSimp2 extends Fragment {
         imagens[11] = R.drawable.beijo_erro;
 
         h = new Handler();
+
+        SharedPreferences pref = App.inst().getSharedPreferences("MyPref", 0);
+        s = pref.getBoolean("sexo", true);
+
         somAtual = 0;
-        App.inst().tocar(sons[somAtual]);
+        App.inst().tocar(s ? sons[somAtual] : sons[somAtual + QOBJETOS]);
     }
 
     @Click
@@ -103,12 +112,12 @@ public class ExpSimp2 extends Fragment {
                 }, TEMPO_CONTORNO);
 
             } else {
-                Toast.makeText(getActivity(), R.string.acertou, Toast.LENGTH_SHORT).show();
-                App.inst().tocar(R.raw.win, sons[++somAtual]);
+                somAtual++;
+                App.inst().tocar(R.raw.win, s ? sons[somAtual] : sons[somAtual + QOBJETOS]);
             }
         } else {
             imgViews[objeto].setImageResource(imagens[objeto + QOBJETOS * 2]);
-            App.inst().tocar(R.raw.lose, sons[somAtual]);
+            App.inst().tocar(R.raw.lose, s ? sons[somAtual] : sons[somAtual + QOBJETOS]);
         }
     }
 

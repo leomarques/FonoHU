@@ -26,7 +26,7 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:id="@+id/galinha"
-        android:src="@drawable/galinha"
+        android:src="@drawable/galo"
         android:layout_alignBottom="@+id/btnSeguir"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
