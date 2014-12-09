@@ -18,7 +18,7 @@
         android:layout_height="fill_parent"
         android:layout_centerVertical="true"
         android:orientation="vertical"
-        android:paddingLeft="10dp"
+        android:paddingLeft="15dp"
         android:id="@+id/linearLayout">
 
         <ImageView
@@ -26,7 +26,7 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"
-            android:src="@drawable/mao_cabeca" />
+            android:src="@drawable/aponta" />
 
         <ImageView
             android:id="@+id/btnPegaPe"

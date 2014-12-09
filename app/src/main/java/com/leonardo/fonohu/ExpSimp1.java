@@ -10,7 +10,7 @@ import org.androidannotations.annotations.Click;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
 
-@EFragment(R.layout.frag_exps)
+@EFragment(R.layout.frag_exp_simp1)
 public class ExpSimp1 extends Fragment {
     public static final int TEMPO_ANIMACAO = 500;
 
@@ -94,7 +94,7 @@ public class ExpSimp1 extends Fragment {
 
     @Click
     public void btnOk() {
-        getFragmentManager().beginTransaction().replace(getId(), new MenuPrincipal_()).commit();
+        getFragmentManager().beginTransaction().replace(getId(), new ExpSimp2_()).commit();
     }
 
     @Override

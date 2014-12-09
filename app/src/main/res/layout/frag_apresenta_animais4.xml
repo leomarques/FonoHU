@@ -40,7 +40,7 @@
         android:id="@+id/leao"
         android:layout_gravity="right|bottom"
         android:src="@drawable/leao"
-        android:layout_above="@+id/linearLayout2"
+        android:layout_above="@+id/btnOk"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 

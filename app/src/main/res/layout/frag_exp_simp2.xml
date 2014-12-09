@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco">
+
+    <ImageView
+        android:id="@+id/texto_toque_exp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/texto_toque_exp" />
+
+    <ImageView
+        android:id="@+id/btnPegaPe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:src="@drawable/pega_pe"
+        android:layout_below="@+id/btnMandaBeijo"
+        android:layout_alignLeft="@+id/texto_toque_exp"
+        android:layout_alignStart="@+id/texto_toque_exp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp" />
+
+    <ImageView
+        android:id="@+id/btnAponta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/aponta"
+        android:layout_alignTop="@+id/btnPegaPe"
+        android:layout_alignRight="@+id/btnMandaBeijo"
+        android:layout_alignEnd="@+id/btnMandaBeijo" />
+
+    <ImageView
+        android:id="@+id/btnDarTchau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dar_tchau"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/btnPegaPe"
+        android:layout_alignStart="@+id/btnPegaPe" />
+
+    <ImageView
+        android:id="@+id/btnMandaBeijo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/beijo"
+        android:layout_alignTop="@+id/btnDarTchau"
+        android:layout_alignRight="@+id/texto_toque_exp"
+        android:layout_alignEnd="@+id/texto_toque_exp"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp" />
+
+    <ImageView
+        android:id="@+id/btnSeguir"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/btn_seguir"
+        android:visibility="gone" />
+
+</RelativeLayout>
