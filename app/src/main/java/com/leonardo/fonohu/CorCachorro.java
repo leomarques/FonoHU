@@ -1,6 +1,7 @@
 package com.leonardo.fonohu;
 
 import android.app.Fragment;
+import android.content.SharedPreferences;
 import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
@@ -57,6 +58,43 @@ public class CorCachorro extends Fragment {
         h = new Handler();
 
         r = new Random().nextInt(4);
+
+        SharedPreferences pref = App.inst().getSharedPreferences("MyPref", 0);
+        boolean s = pref.getBoolean("sexo", true);
+
+        if (s) {
+            switch (r) {
+                case 0:
+                    App.inst().tocar(R.raw.aponte_o, R.raw.o_o, R.raw.cachorro_o, R.raw.amarelo_o);
+                    break;
+                case 1:
+                    App.inst().tocar(R.raw.aponte_o, R.raw.o_o, R.raw.cachorro_o, R.raw.azul_o);
+                    break;
+                case 2:
+                    App.inst().tocar(R.raw.aponte_o, R.raw.o_o, R.raw.cachorro_o, R.raw.verde_o);
+                    break;
+                case 3:
+                    App.inst().tocar(R.raw.aponte_o, R.raw.o_o, R.raw.cachorro_o, R.raw.vermelho_o);
+                    break;
+
+            }
+        } else {
+            switch (r) {
+                case 0:
+                    App.inst().tocar(R.raw.aponte_a, R.raw.o_a, R.raw.cachorro_a, R.raw.amarelo_a);
+                    break;
+                case 1:
+                    App.inst().tocar(R.raw.aponte_a, R.raw.o_a, R.raw.cachorro_a, R.raw.azul_a);
+                    break;
+                case 2:
+                    App.inst().tocar(R.raw.aponte_a, R.raw.o_a, R.raw.cachorro_a, R.raw.verde_a);
+                    break;
+                case 3:
+                    App.inst().tocar(R.raw.aponte_a, R.raw.o_a, R.raw.cachorro_a, R.raw.vermelho_a);
+                    break;
+
+            }
+        }
     }
 
     @Click
