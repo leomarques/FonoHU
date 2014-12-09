@@ -4,7 +4,6 @@ package com.leonardo.fonohu;
 import android.app.Fragment;
 import android.content.SharedPreferences;
 import android.os.Handler;
-import android.util.Log;
 import android.widget.ImageView;
 
 import org.androidannotations.annotations.AfterViews;
@@ -27,7 +26,6 @@ public class ExpSimp1 extends Fragment {
 
         SharedPreferences pref = App.inst().getSharedPreferences("MyPref", 0);
         s = pref.getBoolean("sexo", true);
-        Log.i("jabaliano", "" + s);
 
         menino.setImageResource(s ? R.drawable.menino : R.drawable.menina);
     }

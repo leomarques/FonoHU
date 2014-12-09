@@ -8,10 +8,9 @@
         android:id="@+id/rosto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:src="@drawable/rosto_o" />
+        android:layout_centerVertical="true"
+        android:src="@drawable/rosto_a" />
 
     <ImageView
         android:id="@+id/olhos"
@@ -19,7 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/rosto"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="80dp"
         android:src="@drawable/olhos" />
 
     <ImageView
@@ -50,18 +49,18 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/orelha_esq"
-        android:src="@drawable/orelha_esq_o"
+        android:id="@+id/orelha_dir"
         android:layout_alignTop="@+id/rosto"
-        android:layout_toLeftOf="@+id/rosto"
-        android:layout_toStartOf="@+id/rosto" />
+        android:layout_toRightOf="@+id/rosto"
+        android:layout_toEndOf="@+id/rosto"
+        android:src="@drawable/orelha_dir_a" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/orelha_dir"
-        android:src="@drawable/orelha_dir_o"
+        android:id="@+id/orelha_esq"
+        android:src="@drawable/orelha_esq_a"
         android:layout_alignTop="@+id/rosto"
-        android:layout_toRightOf="@+id/rosto"
-        android:layout_toEndOf="@+id/rosto" />
+        android:layout_toLeftOf="@+id/rosto"
+        android:layout_toStartOf="@+id/rosto" />
 </RelativeLayout>

@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/branco">
+
+    <ImageView
+        android:id="@+id/corpo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/corpo_a" />
+
+    <ImageView
+        android:id="@+id/cabeca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/braco_esq"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="8dp"
+        android:src="@drawable/cabeca_a" />
+
+    <ImageView
+        android:id="@+id/braco_esq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/corpo"
+        android:layout_toLeftOf="@+id/corpo"
+        android:layout_toStartOf="@+id/corpo"
+        android:src="@drawable/braco_esq_a" />
+
+    <ImageView
+        android:id="@+id/perna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/corpo"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="14dp"
+        android:src="@drawable/perna_a" />
+
+    <ImageView
+        android:id="@+id/braco_dir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/corpo"
+        android:layout_toEndOf="@+id/corpo"
+        android:layout_toRightOf="@+id/corpo"
+        android:src="@drawable/braco_dir_a" />
+
+    <ImageView
+        android:id="@+id/pe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/perna"
+        android:layout_alignRight="@+id/perna"
+        android:src="@drawable/pe_a" />
+
+    <ImageView
+        android:id="@+id/mao_esq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/braco_esq"
+        android:layout_toLeftOf="@+id/corpo"
+        android:layout_toStartOf="@+id/corpo"
+        android:src="@drawable/mao_esq_a" />
+
+    <ImageView
+        android:id="@+id/mao_dir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/braco_dir"
+        android:layout_toRightOf="@+id/corpo"
+        android:src="@drawable/mao_dir_a" />
+
+    <ImageView
+        android:id="@+id/btnOk"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"
+        android:src="@drawable/btn_seguir" />
+
+</RelativeLayout>
