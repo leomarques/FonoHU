@@ -29,22 +29,22 @@ public class Cores extends Fragment {
     }
 
     @Click
-     public void btnAmarelo() {
+    public void btnAmarelo() {
         App.inst().tocar(s ? R.raw.amarelo_o : R.raw.amarelo_a);
     }
 
     @Click
-     public void btnAzul() {
+    public void btnAzul() {
         App.inst().tocar(s ? R.raw.azul_o : R.raw.azul_a);
     }
 
     @Click
-     public void btnVerde() {
+    public void btnVerde() {
         App.inst().tocar(s ? R.raw.verde_o : R.raw.verde_a);
     }
 
     @Click
-     public void btnVermelho() {
+    public void btnVermelho() {
         App.inst().tocar(s ? R.raw.vermelho_o : R.raw.vermelho_a);
     }
 }

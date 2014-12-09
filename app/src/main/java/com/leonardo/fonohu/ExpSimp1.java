@@ -18,9 +18,8 @@ public class ExpSimp1 extends Fragment {
 
     @ViewById
     ImageView btnMaoCabeca, btnPegaPe, btnDarTchau, btnMandaBeijo, menino, btnOk;
-
-    private Handler h;
     boolean s;
+    private Handler h;
 
     @AfterViews
     public void aoCriar() {

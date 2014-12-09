@@ -62,7 +62,8 @@ public class App extends Application {
                         mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                             @Override
                             public void onCompletion(MediaPlayer mediaPlayer) {
-                                mp.release();mp = MediaPlayer.create(inst(), som4);
+                                mp.release();
+                                mp = MediaPlayer.create(inst(), som4);
                                 mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                                     @Override
                                     public void onCompletion(MediaPlayer mediaPlayer) {

@@ -19,8 +19,7 @@ public class Main extends Activity {
         Fragment f = getFragmentManager().findFragmentByTag("menu");
         if (f != null && f.isVisible()) {
             super.onBackPressed();
-        }
-        else {
+        } else {
             getFragmentManager().beginTransaction().replace(R.id.mainLayout, new MenuPrincipal_(), "menu").commit();
         }
     }
