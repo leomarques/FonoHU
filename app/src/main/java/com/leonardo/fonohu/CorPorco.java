@@ -17,15 +17,15 @@ import java.util.Random;
 @EFragment(R.layout.frag_cor_animal)
 public class CorPorco extends Fragment {
 
-    public static final int TEMPO_CONTORNO = 2000;
-    public static final int QOBJETOS = 4;
+    private final int TEMPO_CONTORNO = 2000;
+    private final int QOBJETOS = 4;
 
     @ViewById
     ImageView imageView, imageView2, imageView3, imageView4, btnSeguir;
 
-    int[] sons, imagens;
-    ImageView[] imgViews;
-    int r;
+    private int[] imagens;
+    private ImageView[] imgViews;
+    private int r;
     private Handler h;
 
     @AfterViews

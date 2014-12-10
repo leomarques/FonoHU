@@ -14,15 +14,15 @@ import org.androidannotations.annotations.ViewById;
 @EFragment(R.layout.frag_exp_simp2)
 public class ExpSimp2 extends Fragment {
 
-    public static final int TEMPO_CONTORNO = 2000;
-    public static final int QOBJETOS = 4;
+    private static final int TEMPO_CONTORNO = 2000;
+    private static final int QOBJETOS = 4;
 
     @ViewById
-    public ImageView btnDarTchau, btnAponta, btnPegaPe, btnMandaBeijo, btnSeguir;
+    ImageView btnDarTchau, btnAponta, btnPegaPe, btnMandaBeijo, btnSeguir;
 
-    int[] sons, imagens;
-    ImageView[] imgViews;
-    int somAtual;
+    private int[] sons, imagens;
+    private ImageView[] imgViews;
+    private int somAtual;
     private Handler h;
     private boolean s;
 
@@ -87,7 +87,7 @@ public class ExpSimp2 extends Fragment {
         clicado(3);
     }
 
-    public void clicado(final int objeto) {
+    private void clicado(final int objeto) {
         h.postDelayed(new Runnable() {
             @Override
             public void run() {

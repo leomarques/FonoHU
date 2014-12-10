@@ -14,18 +14,15 @@ import org.androidannotations.annotations.ViewById;
 @EFragment(R.layout.frag_acerta_transp2)
 public class AcertaTransp2 extends Fragment {
 
-    public static final int TEMPO_CONTORNO = 2000;
-    public static final int QOBJETOS = 3;
+    private static final int TEMPO_CONTORNO = 2000;
+    private static final int QOBJETOS = 3;
 
     @ViewById
-    ImageView caminhao, onibus, barco;
+    ImageView caminhao, onibus, barco, btnSeguir;
 
-    @ViewById
-    ImageView btnSeguir;
-
-    int[] sons, imagens;
-    ImageView[] imgViews;
-    int somAtual;
+    private int[] sons, imagens;
+    private ImageView[] imgViews;
+    private int somAtual;
     private Handler h;
 
     @AfterViews
@@ -72,7 +69,7 @@ public class AcertaTransp2 extends Fragment {
         clicado(2);
     }
 
-    public void clicado(final int objeto) {
+    private void clicado(final int objeto) {
         h.postDelayed(new Runnable() {
             @Override
             public void run() {

@@ -13,11 +13,12 @@ import org.androidannotations.annotations.ViewById;
 
 @EFragment(R.layout.frag_exp_simp1)
 public class ExpSimp1 extends Fragment {
-    public static final int TEMPO_ANIMACAO = 500;
+    private static final int TEMPO_ANIMACAO = 500;
 
     @ViewById
     ImageView btnMaoCabeca, btnPegaPe, btnDarTchau, btnMandaBeijo, menino, btnOk;
-    boolean s;
+
+    private boolean s;
     private Handler h;
 
     @AfterViews

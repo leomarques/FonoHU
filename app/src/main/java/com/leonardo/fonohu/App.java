@@ -7,7 +7,7 @@ public class App extends Application {
 
     private static App inst;
 
-    MediaPlayer mp;
+    private MediaPlayer mp;
 
     public App() {
         inst = this;

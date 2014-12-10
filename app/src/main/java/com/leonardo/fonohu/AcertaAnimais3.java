@@ -14,18 +14,15 @@ import org.androidannotations.annotations.ViewById;
 @EFragment(R.layout.frag_acerta_animais3)
 public class AcertaAnimais3 extends Fragment {
 
-    public static final int TEMPO_CONTORNO = 2000;
-    public static final int QOBJETOS = 3;
+    private static final int TEMPO_CONTORNO = 2000;
+    private static final int QOBJETOS = 3;
 
     @ViewById
-    ImageView bode, porco, pato;
+    ImageView bode, porco, pato, btnSeguir;
 
-    @ViewById
-    ImageView btnSeguir;
-
-    int[] sons, imagens;
-    ImageView[] imgViews;
-    int somAtual;
+    private int[] sons, imagens;
+    private ImageView[] imgViews;
+    private int somAtual;
     private Handler h;
 
     @AfterViews
@@ -58,21 +55,21 @@ public class AcertaAnimais3 extends Fragment {
     }
 
     @Click
-    public void bode() {
+    void bode() {
         clicado(0);
     }
 
     @Click
-    public void porco() {
+    void porco() {
         clicado(1);
     }
 
     @Click
-    public void pato() {
+    void pato() {
         clicado(2);
     }
 
-    public void clicado(final int objeto) {
+    private void clicado(final int objeto) {
         h.postDelayed(new Runnable() {
             @Override
             public void run() {

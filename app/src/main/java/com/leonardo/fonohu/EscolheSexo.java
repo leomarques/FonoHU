@@ -19,7 +19,7 @@ public class EscolheSexo extends Fragment {
         SharedPreferences pref = App.inst().getSharedPreferences("MyPref", 0);
         SharedPreferences.Editor editor = pref.edit();
         editor.putBoolean("sexo", true);
-        editor.commit();
+        editor.apply();
 
         menino.setImageResource(R.drawable.icone_menino_escolhido);
 
@@ -31,7 +31,7 @@ public class EscolheSexo extends Fragment {
         SharedPreferences pref = App.inst().getSharedPreferences("MyPref", 0);
         SharedPreferences.Editor editor = pref.edit();
         editor.putBoolean("sexo", false);
-        editor.commit();
+        editor.apply();
 
         menina.setImageResource(R.drawable.icone_menina_escolhido);
 
