@@ -5,9 +5,11 @@
     android:background="@color/branco">
 
     <RelativeLayout
+        android:id="@+id/escolha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true">
+        android:layout_centerInParent="true"
+        android:visibility="gone">
 
         <ImageView
             android:id="@+id/texto"
@@ -34,4 +36,12 @@
             android:paddingTop="10dp"
             android:src="@drawable/icone_menina" />
     </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/entrada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/entrada_audibel" />
 </RelativeLayout>
