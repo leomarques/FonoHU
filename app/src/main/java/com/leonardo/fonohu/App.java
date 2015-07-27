@@ -3,6 +3,8 @@ package com.leonardo.fonohu;
 import android.app.Application;
 import android.media.MediaPlayer;
 
+import android.os.Handler;
+
 public class App extends Application {
 
     private static App inst;
@@ -28,9 +30,15 @@ public class App extends Application {
             mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                 @Override
                 public void onCompletion(MediaPlayer mediaPlayer) {
-                    mp.release();
-                    mp = MediaPlayer.create(inst(), som2);
-                    mp.start();
+
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            mp.release();
+                            mp = MediaPlayer.create(inst(), som2);
+                            mp.start();
+                        }
+                    }, 3000);
                 }
             });
         }
