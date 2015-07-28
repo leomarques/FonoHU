@@ -62,4 +62,14 @@
         android:src="@drawable/btn_seguir"
         android:visibility="gone" />
 
+    <ImageView
+        android:id="@+id/repetir"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:paddingTop="5dp"
+        android:src="@drawable/repetir"
+        android:layout_below="@+id/texto_toque_exp"
+        android:layout_toLeftOf="@+id/btnMandaBeijo"
+        android:layout_toStartOf="@+id/btnMandaBeijo" />
+
 </RelativeLayout>

@@ -41,4 +41,14 @@
         android:src="@drawable/btn_seguir"
         android:visibility="invisible" />
 
+    <ImageView
+        android:id="@+id/repetir"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="5dp"
+        android:src="@drawable/repetir" />
+
 </RelativeLayout>

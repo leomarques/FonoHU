@@ -115,4 +115,9 @@ public class AcertaTransp2 extends Fragment {
         super.onPause();
         h.removeCallbacksAndMessages(null);
     }
+
+    @Click
+    public void repetir() {
+        App.inst().tocar(sons[somAtual]);
+    }
 }

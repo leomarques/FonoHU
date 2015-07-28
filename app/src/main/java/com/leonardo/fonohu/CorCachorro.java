@@ -45,7 +45,7 @@ public class CorCachorro extends Fragment {
         imagens[0] = R.drawable.cachorro_amarelo;
         imagens[1] = R.drawable.cachorro_azul;
         imagens[2] = R.drawable.cachorro_verde;
-        imagens[3] = R.drawable.cachorro_vermelho_acerto;
+        imagens[3] = R.drawable.cachorro_vermelho;
         imagens[4] = R.drawable.cachorro_amarelo_acerto;
         imagens[5] = R.drawable.cachorro_azul_acerto;
         imagens[6] = R.drawable.cachorro_verde_acerto;
@@ -59,6 +59,10 @@ public class CorCachorro extends Fragment {
 
         r = new Random().nextInt(4);
 
+        playSound();
+    }
+
+    private void playSound() {
         SharedPreferences pref = App.inst().getSharedPreferences("MyPref", 0);
         boolean s = pref.getBoolean("sexo", true);
 
@@ -158,5 +162,10 @@ public class CorCachorro extends Fragment {
     public void onPause() {
         super.onPause();
         h.removeCallbacksAndMessages(null);
+    }
+
+    @Click
+    public void repetir() {
+        playSound();
     }
 }

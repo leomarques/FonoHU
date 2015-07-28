@@ -59,6 +59,10 @@ public class CorPorco extends Fragment {
 
         r = new Random().nextInt(4);
 
+        playSound();
+    }
+
+    private void playSound() {
         SharedPreferences pref = App.inst().getSharedPreferences("MyPref", 0);
         boolean s = pref.getBoolean("sexo", true);
 
@@ -158,5 +162,10 @@ public class CorPorco extends Fragment {
     public void onPause() {
         super.onPause();
         h.removeCallbacksAndMessages(null);
+    }
+
+    @Click
+    public void repetir() {
+        playSound();
     }
 }
