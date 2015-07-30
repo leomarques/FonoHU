@@ -27,4 +27,9 @@ public class ApresentaAnimais5 extends Fragment {
     public void btnOk() {
         getFragmentManager().beginTransaction().replace(getId(), new AcertaAnimais5_()).commit();
     }
+
+    @Click
+    public void btnVoltar() {
+        getFragmentManager().beginTransaction().replace(getId(), new ApresentaAnimais4_()).commit();
+    }
 }

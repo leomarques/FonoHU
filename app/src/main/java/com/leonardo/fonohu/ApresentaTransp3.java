@@ -22,4 +22,9 @@ public class ApresentaTransp3 extends Fragment {
     public void btnOk() {
         getFragmentManager().beginTransaction().replace(getId(), new AcertaTransp3_()).commit();
     }
+
+    @Click
+    public void btnVoltar() {
+        getFragmentManager().beginTransaction().replace(getId(), new ApresentaTransp2_()).commit();
+    }
 }

@@ -53,4 +53,13 @@
         android:paddingBottom="10dp"
         android:src="@drawable/btn_seguir" />
 
+    <ImageView
+        android:id="@+id/btnPassar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btnOk"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/btn_seguir_clicado" />
+
 </RelativeLayout>
