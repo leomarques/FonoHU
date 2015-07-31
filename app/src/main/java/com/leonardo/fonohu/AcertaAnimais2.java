@@ -18,7 +18,7 @@ public class AcertaAnimais2 extends Fragment {
     private final int QOBJETOS = 3;
 
     @ViewById
-    ImageView vaca, cavalo, galinha, btnSeguir;
+    ImageView vaca, cavalo, galinha, btnSeguir, joinha;
 
     private int[] sons, imagens;
     private ImageView[] imgViews;
@@ -73,12 +73,13 @@ public class AcertaAnimais2 extends Fragment {
         h.postDelayed(new Runnable() {
             @Override
             public void run() {
-                imgViews[objeto].setImageResource(imagens[objeto]);
+                joinha.setVisibility(View.GONE);
             }
         }, TEMPO_CONTORNO);
 
         if (objeto == somAtual) {
-            imgViews[objeto].setImageResource(imagens[objeto + QOBJETOS]);
+            joinha.setImageResource(R.drawable.like);
+            joinha.setVisibility(View.VISIBLE);
 
             if (somAtual == QOBJETOS - 1) {
                 Toast.makeText(getActivity(), R.string.parabens, Toast.LENGTH_SHORT).show();
@@ -98,7 +99,8 @@ public class AcertaAnimais2 extends Fragment {
                 App.inst().tocar(R.raw.win, sons[++somAtual]);
             }
         } else {
-            imgViews[objeto].setImageResource(imagens[objeto + QOBJETOS * 2]);
+            joinha.setImageResource(R.drawable.dislike);
+            joinha.setVisibility(View.VISIBLE);
             Toast.makeText(getActivity(), R.string.errou, Toast.LENGTH_SHORT).show();
             App.inst().tocar(R.raw.lose, sons[somAtual]);
         }

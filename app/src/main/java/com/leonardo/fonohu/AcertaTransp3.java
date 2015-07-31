@@ -18,7 +18,7 @@ public class AcertaTransp3 extends Fragment {
     private static final int QOBJETOS = 2;
 
     @ViewById
-    ImageView helicoptero, aviao, btnSeguir;
+    ImageView helicoptero, aviao, btnSeguir, joinha;
 
     private int[] sons, imagens;
     private ImageView[] imgViews;
@@ -63,12 +63,13 @@ public class AcertaTransp3 extends Fragment {
         h.postDelayed(new Runnable() {
             @Override
             public void run() {
-                imgViews[objeto].setImageResource(imagens[objeto]);
+                joinha.setVisibility(View.GONE);
             }
         }, TEMPO_CONTORNO);
 
         if (objeto == somAtual) {
-            imgViews[objeto].setImageResource(imagens[objeto + QOBJETOS]);
+            joinha.setImageResource(R.drawable.like);
+            joinha.setVisibility(View.VISIBLE);
 
             if (somAtual == QOBJETOS - 1) {
                 Toast.makeText(getActivity(), R.string.parabens, Toast.LENGTH_SHORT).show();
@@ -89,7 +90,8 @@ public class AcertaTransp3 extends Fragment {
                 App.inst().tocar(R.raw.win, sons[++somAtual]);
             }
         } else {
-            imgViews[objeto].setImageResource(imagens[objeto + QOBJETOS * 2]);
+            joinha.setImageResource(R.drawable.dislike);
+            joinha.setVisibility(View.VISIBLE);
             Toast.makeText(getActivity(), R.string.errou, Toast.LENGTH_SHORT).show();
             App.inst().tocar(R.raw.lose, sons[somAtual]);
         }

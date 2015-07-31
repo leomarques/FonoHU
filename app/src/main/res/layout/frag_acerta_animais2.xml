@@ -50,4 +50,11 @@
         android:paddingTop="5dp"
         android:src="@drawable/repetir" />
 
+    <ImageView
+        android:id="@+id/joinha"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
 </RelativeLayout>
